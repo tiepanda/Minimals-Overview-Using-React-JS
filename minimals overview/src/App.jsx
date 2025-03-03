@@ -4,7 +4,7 @@ function App() {
 
   return (
     <>
-      <h1>This is the main branch file</h1>
+      
     </>
   )
 }
