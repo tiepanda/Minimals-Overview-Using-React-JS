@@ -10,7 +10,7 @@ function CourseProfile() {
               <span className="animation"></span>
           </span>
           <div className="image-div">
-            <img className="profile-image" src={`/src/course/Images/avatar.webp`} />
+            <img className="profile-image" src={`../src/assets/images/Course-Images/course-profile/avatar.webp`} />
           </div>
         </div>
         <h6>Jaydon Frankie</h6>

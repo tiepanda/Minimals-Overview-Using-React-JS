@@ -150,7 +150,7 @@ function Carousel() {
                             <div className="sList-item-container">
                               <div className="sList-image-container">
                                 <span className="sList-span">
-                                  <img className="sList-image" src={`/src/course/Images/${slide.slideImage}`} draggable="false" />
+                                  <img className="sList-image" src={`../src/assets/images/Course-Images/course-feature/${slide.slideImage}`} draggable="false" />
                                 </span>
                               </div>
 

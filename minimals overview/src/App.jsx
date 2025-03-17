@@ -1,22 +1,18 @@
-import './App.css'
-import 'bootstrap/dist/css/bootstrap.min.css';
+import "./App.css";
+import "bootstrap/dist/css/bootstrap.min.css";
 
 // Course Component
-import Course from './course/Course';
-import NavBar from './nav/NavBar';
-
+import Course from "./pages/Course";
+import NavBar from "./pages/nav-bar/NavBar";
 
 function App() {
-
   return (
     <>
-
       <NavBar />
-      
-      <Course />
 
+      <Course />
     </>
-  )
+  );
 }
 
-export default App
+export default App;

@@ -46,7 +46,8 @@ function NavBar() {
                 <div style={{ display: "inline-flex", width: "100%" }}>
                     <div>
                         <button className="nav-left-button" onClick={toggleDropdown}>
-                            <img className="nav-left-image" src={`/src/nav/Image/${selectedTeam.navImage}`} />
+                            {/* <img className="nav-left-image" src={`/src/nav/Image/${selectedTeam.navImage}`} /> */}
+                            <img className="nav-left-image" src={`../src/assets/Images/NavBar-Images/${selectedTeam.navImage}`} />
                             <span className="nav-left-title">{selectedTeam.navTitle}</span>
                             <span className={`nav-left-subtitle ${dynamicBackground[navData.navContent.indexOf(selectedTeam)]}`}>{selectedTeam.navSubTitle}</span>
                         </button>
@@ -58,7 +59,7 @@ function NavBar() {
                                         {navData.navContent.map((team, index) => (
                                             <li key={index} style={{ marginTop: "10px" }} className="nav-left-active">
                                                 <button className="nav-left-button" onClick={() => handleSelectedTeam(team)}>
-                                                    <img className="nav-left-image" src={`/src/nav/Image/${team.navImage}`} />
+                                                    <img className="nav-left-image" src={`../src/assets/Images/NavBar-Images/${team.navImage}`} />
                                                     <div>
                                                         <span className="nav-left-title drop-left-title">{team.navTitle}</span>
                                                         <span className={`nav-left-subtitle drop-left-subtitle ${dynamicBackground[index]}`}>{team.navSubTitle}</span>
@@ -83,7 +84,7 @@ function NavBar() {
                         <button className="nav-right-button">
                             <div className="nav-profile-right">
                                 <div className="nav-Image-div">
-                                    <img className="nav-profile-image" src={`/src/nav/Image/avatar.webp`} />
+                                    <img className="nav-profile-image" src={`../src/assets/Images/NavBar-Images/avatar.webp`} />
                                 </div>
                             </div>
                         </button>

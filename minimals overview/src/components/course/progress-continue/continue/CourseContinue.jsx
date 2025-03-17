@@ -51,7 +51,7 @@ function CourseContinue() {
                 <div key={i} className='main-content'>
                     <div className='sub-content'>
                         <div className='image-container'>
-                            <img className='image' src={`/src/course/Images/${item.continueImage}`} />
+                            <img className='image' src={`../src/assets/images/Course-Images/course-continue/${item.continueImage}`} />
                         </div>
 
                         <div className='data-content'>

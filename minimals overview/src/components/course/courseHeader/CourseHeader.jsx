@@ -59,7 +59,7 @@ function CourseHeader() {
                       <div className="subcard1-text">{item.cardText}</div>
                     </div>
                     <span className="subcard2">
-                      <img src={`/src/course/Images/${item.cardImage}`} />
+                      <img src={`../src/assets/images/Course-Images/course-header/${item.cardImage}`} />
                     </span>
                     <div
                       className={`subcard3 ${colorClasses[i % colorClasses.length]}`}
