@@ -1,15 +1,13 @@
 // data/dashboardData.js
 
 // Import SVG icons
-import analyticsIcon from "../images/page-icons/ic-analytics.svg";
-import bankingIcon from "../images/page-icons/ic-banking.svg";
-import blankIcon from "../images/page-icons/ic-blank.svg";
-import bookingIcon from "../images/page-icons/ic-booking.svg";
-import courseIcon from "../images/page-icons/ic-course.svg";
-import dashboardIcon from "../images/page-icons/ic-dashboard.svg";
-import ecommerceIcon from "../images/page-icons/ic-ecommerce.svg";
-import fileIcon from "../images/page-icons/ic-file.svg";
-import BookingDashboard from "../pages/BookingDashboard";
+import analyticsIcon from "../assets/images/page-icons/ic-analytics.svg";
+import bankingIcon from "../assets/images/page-icons/ic-banking.svg";
+import bookingIcon from "../assets/images/page-icons/ic-booking.svg";
+import courseIcon from "../assets/images/page-icons/ic-course.svg";
+import dashboardIcon from "../assets/images/page-icons/ic-dashboard.svg";
+import ecommerceIcon from "../assets/images/page-icons/ic-ecommerce.svg";
+import fileIcon from "../assets/images/page-icons/ic-file.svg";
 
 // Stats data for dashboard cards
 export const statsData = [
@@ -211,8 +209,8 @@ export const newestBookings = [
     days: 3,
     nights: 2,
     guests: "3-5",
-    image: "/src/images/travel/travel-1.webp",
-    avatar: "/src/images/avathar/avatar-1.webp",
+    image: "/src/assets/images/travel/travel-1.webp",
+    avatar: "/src/assets/images/avathar/avatar-1.webp",
     price: 83.74,
   },
   {
@@ -222,8 +220,8 @@ export const newestBookings = [
     days: 3,
     nights: 2,
     guests: "3-5",
-    image: "/src/images/travel/travel-2.webp",
-    avatar: "/src/images/avathar/avatar-2.webp",
+    image: "/src/assets/images/travel/travel-2.webp",
+    avatar: "/src/assets/images/avathar/avatar-2.webp",
     price: 97.14,
   },
   {
@@ -233,8 +231,8 @@ export const newestBookings = [
     days: 3,
     nights: 2,
     guests: "3-5",
-    image: "/src/images/travel/travel-3.webp",
-    avatar: "/src/images/avathar/avatar-3.webp",
+    image: "/src/assets/images/travel/travel-3.webp",
+    avatar: "/src/assets/images/avathar/avatar-3.webp",
     price: 68.71,
   },
   {
@@ -244,8 +242,8 @@ export const newestBookings = [
     days: 3,
     nights: 2,
     guests: "3-5",
-    image: "/src/images/travel/travel-4.webp",
-    avatar: "/src/images/avathar/avatar-4.webp",
+    image: "/src/assets/images/travel/travel-4.webp",
+    avatar: "/src/assets/images/avathar/avatar-4.webp",
     price: 85.21,
   },
   {
@@ -255,8 +253,8 @@ export const newestBookings = [
     days: 3,
     nights: 2,
     guests: "3-5",
-    image: "/src/images/travel/travel-5.webp",
-    avatar: "/src/images/avathar/avatar-5.webp",
+    image: "/src/assets/images/travel/travel-5.webp",
+    avatar: "/src/assets/images/avathar/avatar-5.webp",
     price: 52.17,
   },
   {
@@ -266,8 +264,8 @@ export const newestBookings = [
     days: 3,
     nights: 2,
     guests: "3-5",
-    image: "/src/images/travel/travel-6.webp",
-    avatar: "/src/images/avathar/avatar-6.webp",
+    image: "/src/assets/images/travel/travel-6.webp",
+    avatar: "/src/assets/images/avathar/avatar-6.webp",
     price: 25.18,
   },
   {
@@ -277,8 +275,8 @@ export const newestBookings = [
     days: 3,
     nights: 2,
     guests: "3-5",
-    image: "/src/images/travel/travel-1.webp",
-    avatar: "/src/images/avathar/avatar-7.webp",
+    image: "/src/assets/images/travel/travel-1.webp",
+    avatar: "/src/assets/images/avathar/avatar-7.webp",
     price: 43.84,
   },
   {
@@ -288,8 +286,8 @@ export const newestBookings = [
     days: 3,
     nights: 2,
     guests: "3-5",
-    image: "/src/images/travel/travel-2.webp",
-    avatar: "/src/images/avathar/avatar-8.webp",
+    image: "/src/assets/images/travel/travel-2.webp",
+    avatar: "/src/assets/images/avathar/avatar-8.webp",
     price: 60.98,
   },
 ];
@@ -299,7 +297,7 @@ export const bookingDetailsData = [
   {
     id: 1,
     destination: "Island Hopping Extravaganza",
-    destinationImage: "/src/images/travel/travel-1.webp",
+    destinationImage: "/src/assets/images/travel/travel-1.webp",
     customerName: "Jayvion Simon",
     customerPhone: "+1 202-555-0143",
     checkInDate: "12 Mar 2025",
@@ -311,7 +309,7 @@ export const bookingDetailsData = [
   {
     id: 2,
     destination: "Cultural Wonders of Europe",
-    destinationImage: "/src/images/travel/travel-2.webp",
+    destinationImage: "/src/assets/images/travel/travel-2.webp",
     customerName: "Lucian Obrien",
     customerPhone: "+1 416-555-0198",
     checkInDate: "11 Mar 2025",
@@ -323,7 +321,7 @@ export const bookingDetailsData = [
   {
     id: 3,
     destination: "Safari Expedition in Africa",
-    destinationImage: "/src/images/travel/travel-3.webp",
+    destinationImage: "/src/assets/images/travel/travel-3.webp",
     customerName: "Deja Brady",
     customerPhone: "+44 20 7946 0958",
     checkInDate: "10 Mar 2025",
@@ -335,7 +333,7 @@ export const bookingDetailsData = [
   {
     id: 4,
     destination: "Grand Canyon Explorer",
-    destinationImage: "/src/images/travel/travel-4.webp",
+    destinationImage: "/src/assets/images/travel/travel-4.webp",
     customerName: "Harrison Stein",
     customerPhone: "+61 2 9876 5432",
     checkInDate: "09 Mar 2025",
@@ -347,7 +345,7 @@ export const bookingDetailsData = [
   {
     id: 5,
     destination: "Historic Cities of Asia",
-    destinationImage: "/src/images/travel/travel-5.webp",
+    destinationImage: "/src/assets/images/travel/travel-5.webp",
     customerName: "Reece Chung",
     customerPhone: "+91 22 1234 5678",
     checkInDate: "08 Mar 2025",
@@ -519,7 +517,7 @@ export const userData = {
   name: "Jaydon Frankie",
   email: "demo@minimals.cc",
   status: "Free",
-  avatar: "../src/images/avathar/avatar-25.webp",
+  avatar: "../src/assets/images/avathar/avatar-25.webp",
 };
 
 // // Other dashboard data can be added here

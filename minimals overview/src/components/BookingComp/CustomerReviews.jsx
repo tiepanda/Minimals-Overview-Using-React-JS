@@ -175,7 +175,7 @@ const CustomerReviews = ({ reviews }) => {
             <div className="d-flex align-items-center mb-0">
               <div className="me-3">
                 <img
-                  src={`/src/images/avathar/${reviews[currentIndex].avatar}`}
+                  src={`/src/assets/images/avathar/${reviews[currentIndex].avatar}`}
                   alt={`${reviews[currentIndex].name} avatar`}
                   className="rounded-circle"
                   width="42"
