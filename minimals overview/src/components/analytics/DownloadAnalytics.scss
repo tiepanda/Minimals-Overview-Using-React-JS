@@ -1,0 +1,695 @@
+.analytics-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    padding: 20px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  }
+  
+  .chart-card {
+    background: white;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s ease;
+  
+    &:hover {
+      transform: scale(1.03);
+    }
+  }
+  
+  .small-chart {
+    width: 350px;
+    flex: 1;
+    min-width: 350px;
+  }
+  
+  .donut-chart {
+    position: relative;
+  }
+  
+  .chart-total {
+    font-size: 22px;
+    font-weight: bold;
+    fill: #0B1A2B;
+    transition: fill 0.3s ease;
+  }
+  
+  .legend {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+  }
+  
+  .legend-item {
+    display: flex;
+    align-items: center;
+    margin-right: 15px;
+    font-size: 14px;
+    color: #4A4A4A;
+    cursor: pointer;
+  
+    &:hover {
+      color: #00746D;
+      font-weight: bold;
+    }
+  }
+  
+  .legend-color {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    margin-right: 5px;
+  }
+  
+  /* Tooltip Styling */
+  .custom-tooltip {
+    background: rgba(209, 208, 208, 0.7);
+    color: rgb(6, 6, 6);
+    padding: 6px 10px;
+    border-radius: 5px;
+    font-size: 14px;
+    text-align: center;
+  }
+  
+  .large-chart {
+    flex: 2;
+    min-width: 600px;
+  }
+  
+  .legend-item {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+  
+  .legend-color {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+  }
+
+  .analytics-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+  
+    .chart-card {
+      background: #fff;
+      padding: 20px;
+      border-radius: 12px;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    }
+  
+    .small-chart {
+      flex: 1;
+    }
+  
+    .large-chart {
+      flex: 2;
+    }
+  
+    .chart-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+  }
+  
+  .chart-card {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .small-chart {
+    flex: 1;
+  }
+  
+  .large-chart {
+    flex: 2;
+  }
+  
+  .chart-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .custom-dropdown {
+    .dropdown-toggle {
+      border-radius: 8px !important;
+      padding: 8px 16px;
+      font-size: 16px;
+      border: 1px solid #ddd;
+      background-color: white;
+    }
+  
+    .dropdown-menu {
+      border-radius: 10px;
+      padding: 10px 0;
+      box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+      min-width: 120px;
+      overflow: hidden;
+      border: none;
+    }
+  
+    .dropdown-item {
+      padding: 10px 20px;
+      font-size: 15px;
+      transition: background 0.3s ease;
+      border-radius: 6px;
+      margin: 2px 10px;
+  
+      &:hover {
+        background: rgba(0, 0, 0, 0.05);
+      }
+    }
+  
+    .selected {
+      background: rgba(0, 150, 255, 0.1);
+      font-weight: bold;
+    }
+  }
+
+  .chart-card {
+    background: #ffffff;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    transition: none; // Disable any hover transition that may cause movement
+  
+    &:hover {
+      transform: none !important; // Prevent scaling or shifting
+      box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); // Keep the same shadow on hover
+    }
+  }
+
+  .pie-chart-legend {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 15px;
+  
+    .legend-item {
+      display: flex;
+      align-items: center;
+      font-size: 14px;
+      font-weight: 500;
+      color: #333;
+    }
+  
+    .legend-color {
+      width: 12px;
+      height: 12px;
+      border-radius: 50%;
+      margin-right: 8px;
+    }
+  }
+
+  .legend-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 10px;
+  }
+  
+  .legend-item {
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    font-weight: 500;
+  }
+  
+  .legend-color {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    margin-right: 5px;
+  }
+
+  .analytics-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  .chart-card {
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .small-chart {
+    width: 50%;
+  }
+  
+  .large-chart {
+    width: 100%;
+  }
+  
+  .custom-tooltip {
+    background: #fff;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+  }
+  
+  .legend-container {
+    display: flex;
+    gap: 10px;
+  }
+  
+  .legend-item {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+  }
+  
+  .legend-color {
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+  }
+ 
+  .analytics-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 20px;
+  flex-wrap: wrap;
+
+  .chart-card {
+    flex: 1;
+    min-width: 48%;
+    max-width: 48%; // Ensures consistency
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  }
+
+  .small-chart {
+    max-width: 48%;
+  }
+
+  .large-chart {
+    max-width: 48%;
+  }
+
+  @media (max-width: 1024px) {
+    .chart-card {
+      min-width: 100%; // Stacks on smaller screens
+      max-width: 100%;
+    }
+  }
+}
+
+.analytics-container {
+  display: flex;
+  flex-direction: row; // Ensures cards are side by side
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: nowrap; // Prevents wrapping
+  gap: 20px;
+  width: 100%;
+
+  .chart-card {
+    flex: 1; 
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  }
+
+  .small-chart {
+    width: 40%; // Ensures equal width
+  }
+
+  .large-chart {
+    width: 60%; // Ensures equal width
+  }
+
+  @media (max-width: 1024px) {
+    flex-wrap: wrap; // Stacks on smaller screens
+    .chart-card {
+      width: 100%; // Full width on small screens
+    }
+  }
+}
+
+.analytics-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 20px;
+  width: 100%;
+  flex-wrap: nowrap; // Prevents stacking unless needed
+
+  .chart-card {
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  }
+
+  .small-chart {
+    flex: 2; // Makes the first card bigger
+    min-width: 30%; // Ensures it's larger
+  }
+
+  .large-chart {
+    flex: 1; // Makes the second card smaller
+    min-width: 70%; // Ensures it stays smaller
+  }
+
+  @media (max-width: 1024px) {
+    flex-wrap: wrap; // Stacks on smaller screens
+    .chart-card {
+      width: 100%; // Full width when stacked
+    }
+  }
+}
+
+.chart-header p {
+  color: #b0b0b0; // Light grey color
+  font-size: 14px;
+}
+
+.chart-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  .title-container {
+    display: flex;
+    flex-direction: column; // Stack h3 and p vertically
+  }
+
+  h3 {
+    margin: 0; // Remove unwanted spacing
+    font-weight: bold;
+  }
+
+  p {
+    margin: 4px;
+    font-size: 14px;
+    color: #979797;
+  }
+}
+
+.analytics-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 20px;
+  flex-wrap: wrap; // Ensures charts adjust responsively
+  width: 100%;
+  max-width: 100vw; // Prevents overflow beyond viewport width
+  overflow: hidden; // Ensures no horizontal scrolling
+
+  .chart-card {
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    min-height: 350px;
+  }
+
+  .small-chart {
+    flex: 2; 
+    min-width: 30%;
+    max-width: 35%;
+  }
+
+  .large-chart {
+    flex: 1;
+    min-width: 60%;
+    max-width: 65%;
+  }
+
+  @media (max-width: 1024px) {
+    flex-direction: column;
+    .chart-card {
+      width: 100%;
+    }
+  }
+}
+
+// Completely prevent horizontal scrolling in the entire page
+html, body {
+  overflow-x: hidden;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  max-width: 100vw;
+}
+
+.region-labels {
+  display: flex;
+  gap: 15px; // Adds spacing between labels
+  margin-top: 5px; // Space below <p> tag
+}
+
+.region {
+  display: flex;
+  align-items: center;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  display: inline-block;
+  margin-right: 5px;
+}
+
+.title-container {
+  text-align: left; // Aligns all text to the left
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start; // Ensures everything stays left-aligned
+}
+
+.region-labels {
+  display: flex;
+  gap: 15px; // Space between spans
+  margin-top: 5px; // Adds space below <p> tag
+}
+
+.region {
+  display: flex;
+  align-items: center;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  display: inline-block;
+  margin-right: 5px;
+}
+
+
+.title-container {
+  text-align: left; // Aligns all text to the left
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start; // Ensures everything stays left-aligned
+}
+
+.region-labels {
+  display: flex;
+  gap: 15px; // Space between spans
+  margin-top: 5px; // Adds space below <p> tag
+}
+
+.region {
+  display: flex;
+  align-items: center;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  display: inline-block;
+  margin-right: 5px;
+}
+
+.download-numbers {
+  display: flex;
+  gap: 25px; // Space between numbers
+  margin-top: 5px; // Space below span elements
+}
+
+.download-numbers h2 {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.dropdown-menu {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.dropdown-items-container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+
+
+
+
+
+
+
+.card-container {
+  position: relative;  // Ensures the dropdown is positioned inside the card
+  padding: 16px;
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.custom-dropdown {
+  position: absolute;
+  top: 10px;  // Adjust for proper alignment
+  right: 10px; // Aligns to the top-right corner
+  
+  .dropdown-toggle {
+    font-size: 14px;
+    font-weight: 600;
+    padding: 6px 12px;
+    border-radius: 6px;
+    background: white;
+    border: 1px solid #d1d5db;
+    transition: all 0.3s ease;
+
+    &:hover {
+      background-color: #f8f9fa;
+    }
+  }
+
+  .custom-menu {
+    position: absolute !important;
+    top: 40px;  // Pushes the dropdown below the button
+    right: 0;   // Aligns it with the right side of the button
+    min-width: 120px;
+    padding: 8px;
+    border-radius: 6px;
+    background: white;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.15);
+    z-index: 1000;
+
+    .dropdown-item {
+      font-size: 14px;
+      padding: 8px 10px;
+      border-radius: 4px;
+      transition: background 0.2s ease-in-out;
+
+      &:hover,
+      &.active-item {
+        background-color: #edecec;
+        color: rgb(23, 23, 23);
+      }
+    }
+  }
+}
+
+
+
+
+.custom-dropdown {
+  // position: relative;
+
+  .dropdown-toggle {
+    background: rgb(255, 255, 255)q;
+    border: 1px solid #ccc;
+    color: #333;
+    padding: 8px 16px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 8px;
+
+    &:hover, &:focus {
+      background: #f1f1f1;
+      border-color: #b6b6b6;
+    }
+
+    /* Arrow icon */
+    &::after {
+      content: "▼"; /* Unicode down arrow */
+      font-size: 12px;
+      color: #838181;
+      transition: transform 0.2s ease;
+    }
+  }
+
+  /* Rotate arrow when dropdown is open */
+  &.show .dropdown-toggle::after {
+    transform: rotate(180deg);
+  }
+
+  .dropdown-menu {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background: #fff;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 4px;
+    display: none;
+    min-width: 150px;
+    padding: 4px 0;
+    z-index: 10;
+    opacity: 0;
+    transform: translateY(-10px);
+    transition: opacity 0.2s ease, transform 0.2s ease;
+
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  &.show .dropdown-menu {
+    display: flex;
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  .dropdown-item {
+    padding: 10px 16px;
+    font-size: 14px;
+    color: #333;
+    text-align: left;
+    width: 100%;
+    cursor: pointer;
+
+    &:hover {
+      background: #f1f1f1;
+    }
+
+    &.active-item {
+      background: #b6b6b6;
+      color: white;
+    }
+  }
+}
