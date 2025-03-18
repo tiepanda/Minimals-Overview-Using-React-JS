@@ -11,7 +11,6 @@ function App() {
       <NavBar />
 
       <Course />
-      <h1>Example</h1>
     </>
   );
 }
