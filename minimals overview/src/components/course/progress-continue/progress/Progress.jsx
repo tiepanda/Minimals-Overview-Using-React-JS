@@ -48,7 +48,7 @@ function Progress() {
 
   return (
     <div>
-        <div className='main-card'>
+        <div className='main-cardss'>
             <div className='progress-header'>
                 <div className='progress-title-container'>
                     <span className='progress-title'>Course progress</span>

@@ -40,7 +40,7 @@ function CourseContinue() {
   return (
     <div>
       
-      <div className='main-card'>
+      <div className='main-cardss'>
         <div className='container-title'>
             <div className='title'>
                 <span className='heading'>{continueData.content.title.heading}</span>
@@ -48,7 +48,7 @@ function CourseContinue() {
         </div>
         {continueData.content.data.map((item, i) => {
             return (
-                <div key={i} className='main-content'>
+                <div key={i} className='main-contentss'>
                     <div className='sub-content'>
                         <div className='image-container'>
                             <img className='image' src={`../src/assets/images/Course-Images/course-continue/${item.continueImage}`} />

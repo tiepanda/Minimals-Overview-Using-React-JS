@@ -51,7 +51,7 @@ function CourseHeader() {
         <Row>
           {headerData.header.cards.map((item, i) => (
             <Col key={i}>
-              <div className="card">
+              <div className="cardss">
                 <div className="main-cards">
                   <div className="card1">
                     <div className="subcard1">

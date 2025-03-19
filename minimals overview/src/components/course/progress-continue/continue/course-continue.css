@@ -1,4 +1,4 @@
-.main-card {
+.main-cardss {
   background-color: #ffffff;
   color: #1c252e;
   background-image: none;
@@ -30,7 +30,7 @@
 
 /* content css */
 
-.main-content {
+.main-contentss {
   padding: 20px;
   display: flex;
   flex-direction: column;
