@@ -99,7 +99,7 @@ const BookingDashboard = () => {
         ))}
       </Row>
 
-      <Row className="p-2">
+      <Row className="py-2">
         <Col
           lg={12}
           xl={8}
