@@ -18,7 +18,7 @@ function Course() {
         <div className="row">
           {/* Left Content */}
           <div
-            className="col-12 col-sm-9"
+            className="col-12 col-md-9 col-sm-8"
             style={{ borderTop: "1px solid #E7E0ED" }}
           >
             <CourseHeader />
@@ -31,7 +31,7 @@ function Course() {
           </div>
 
           {/* Right Content */}
-          <div className="col-12 col-sm-3" style={{ background: "#F6F4F8" }}>
+          <div className="col-12 col-md-3 col-sm-4" style={{ background: "#F6F4F8" }}>
             <CourseProfile />
 
             <Strength />

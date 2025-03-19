@@ -9,12 +9,12 @@ function ProgressContinue() {
       <div className="container-fluid mt-5">
         <div className="row">
           {/* Left Side Component */}
-          <div className="col-12 col-md-6">
+          <div className="col-12 col-md-6 col-sm-12">
             <Progress />
           </div>
 
           {/* Right Side Component */}
-          <div className="col-12 col-md-6">
+          <div className="col-12 col-md-6 col-sm-12">
             <CourseContinue />
           </div>
         </div>
