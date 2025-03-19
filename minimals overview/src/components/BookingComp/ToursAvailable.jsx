@@ -20,13 +20,23 @@ const ToursAvailable = () => {
   const dashOffset = circumference - soldOutDasharray;
 
   return (
-    <Card className=" shadow-sm" style={{ border: "none" }}>
+    <Card
+      className=" "
+      style={{
+        borderRadius: "5%",
+        border: "none",
+        boxShadow:
+          "0 0 2px 0 rgba(145 158 171 / 0.2), 0 12px 24px -4px rgba(145 158 171 / 0.12)",
+      }}
+    >
       <Card.Body className="p-4">
-        <h6 className="mb-4 text-body-secondary fw-normal ">Tours available</h6>
+        <h1 className="  " style={{ fontSize: "19px" }}>
+          Tours available
+        </h1>
 
         <div
-          className="position-relative d-flex justify-content-center align-items-center "
-          style={{ height: "200px", backgroundPosition: "relative" }}
+          className=" d-flex justify-content-center align-items-center "
+          style={{ height: "300px" }}
         >
           {/* Define the gradient */}
           <svg width="0" height="0">
@@ -104,9 +114,20 @@ const ToursAvailable = () => {
                   marginRight: 10,
                 }}
               ></div>
-              <span className="text-body-secondary">Sold out</span>
+              <span
+                className=""
+                style={{
+                  fontSize: "14px",
+                  fontWeight: "500",
+                  color: "#637381",
+                }}
+              >
+                Sold out
+              </span>
             </div>
-            <span className="fw-medium">{soldOutTours} tours</span>
+            <span className="fw-medium" style={{ fontSize: "14px" }}>
+              {soldOutTours} tours
+            </span>
           </div>
 
           <div className="d-flex align-items-center justify-content-between">
@@ -120,9 +141,20 @@ const ToursAvailable = () => {
                   marginRight: 10,
                 }}
               ></div>
-              <span className="text-body-secondary">Available</span>
+              <span
+                className=""
+                style={{
+                  fontSize: "14px",
+                  fontWeight: "500",
+                  color: "#637381",
+                }}
+              >
+                Available
+              </span>
             </div>
-            <span className="fw-medium">{availableTours} tours</span>
+            <span className="fw-medium" style={{ fontSize: "14px" }}>
+              {availableTours} tours
+            </span>
           </div>
         </div>
       </Card.Body>

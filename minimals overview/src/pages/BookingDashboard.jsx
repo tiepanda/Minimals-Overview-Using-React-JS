@@ -99,16 +99,23 @@ const BookingDashboard = () => {
         ))}
       </Row>
 
-      {/* <Row displayCards="flex"></Row> */}
       <Row className="p-2">
         <Col
           lg={12}
           xl={8}
-          className="card py-3 shadow-sm"
-          style={{ backgroundColor: "#f4f6f8", border: "none" }}
+          className="card pt-2 shadow-sm"
+          style={{
+            height: "0%",
+            borderRadius: "16px",
+            backgroundColor: "#f4f6f8",
+            border: "none",
+          }}
         >
-          <div className="card p-1" style={{ border: "none" }}>
-            <Row className="card-body p-2 ">
+          <div
+            className="card "
+            style={{ borderRadius: "16px", border: "none" }}
+          >
+            <Row className="card-body p-2">
               <Col lg={12} xl={6}>
                 <TotalIncomeGraph />
               </Col>
@@ -119,7 +126,7 @@ const BookingDashboard = () => {
             </Row>
           </div>
 
-          <div className="pt-2">
+          <div className="py-2">
             <div className="card" style={{ border: "none" }}>
               <div className="card-body">
                 <BookedStatusBar2
@@ -129,7 +136,7 @@ const BookingDashboard = () => {
             </div>
           </div>
         </Col>
-        <Col lg={12} xl={4} className="px-2 py-4">
+        <Col lg={12} xl={4} className="px-2">
           <ToursAvailable />
         </Col>
       </Row>
