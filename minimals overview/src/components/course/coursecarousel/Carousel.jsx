@@ -1,4 +1,4 @@
-import React, { useState, useRef } from "react";
+import React, { useState, useRef, useEffect } from "react";
 import "./carousel.css";
 
 // Sliding Data
@@ -66,10 +66,25 @@ const SlidingData = {
 
 function Carousel() {
   const [startIndex, setStartIndex] = useState(0);
-  const visibleSlides = 3;
+  // const visibleSlides = 3;
 
   const totalSlides = SlidingData.slide.slideData.length;
 
+  // Number of visible slides based on container width
+  const [visibleSlides, setVisibleSlides] = useState(3);
+
+  useEffect(() => {
+    const handleResize = () => {
+      const width = window.innerWidth;
+      if (width < 800) setVisibleSlides(1);
+      else setVisibleSlides(3);
+    };
+
+    handleResize();
+    window.addEventListener("resize", handleResize);
+    return () => window.removeEventListener("resize", handleResize);
+  }, []);
+   
   // Handle Next Slide
   const nextSlide = () => {
     if (startIndex < totalSlides - visibleSlides) {

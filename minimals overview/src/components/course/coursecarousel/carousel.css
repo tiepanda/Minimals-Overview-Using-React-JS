@@ -210,6 +210,19 @@
   padding: 0 10px;
 }
 
+/* Responsive styles */
+@media (max-width: 1024px) {
+  .main-slide-container {
+    flex: 0 0 calc(100% / 3); /* Each slide takes up 1/3rd of the container */
+  }
+}
+
+@media (max-width: 800px) {
+  .main-slide-container {
+    flex: 0 0 calc(100%); /* Each slide takes up the full width of the container */
+  }
+}
+
 .sList-item-container {
   background-color: white;
   color: #1c252e;
