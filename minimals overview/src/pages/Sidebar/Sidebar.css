@@ -19,7 +19,7 @@
 }
 
 .sidebar.collapsed {
-  width: 88px;
+  width: 75px;
 }
 
 .sidebar-header {
@@ -47,9 +47,8 @@
 }
 
 .toggle-button {
-  width: 20px;
-  height: 20px;
-  font-size: 80%;
+  width: 24px;
+  height: 24px;
   background: none;
   border: none;
   color: #919eab;
@@ -107,6 +106,11 @@
   color: #00a76f;
 }
 
+.menu-item.active .menu-icon {
+  filter: brightness(0) saturate(100%) invert(72%) sepia(40%) saturate(7493%)
+    hue-rotate(118deg) brightness(93%) contrast(101%);
+}
+
 .menu-item.disabled {
   opacity: 0.48;
   cursor: not-allowed;
@@ -119,12 +123,19 @@
 }
 
 .icon {
-  font-size: 20px;
   min-width: 24px;
+  height: 24px;
   display: flex;
   align-items: center;
   justify-content: center;
-  /* color: #00a76f; */
+}
+
+.menu-icon {
+  width: 20px;
+  height: 20px;
+  /* Default icon color for SVGs */
+  filter: brightness(0) saturate(100%) invert(65%) sepia(12%) saturate(332%)
+    hue-rotate(179deg) brightness(92%) contrast(89%);
 }
 
 .label-container {
@@ -174,25 +185,9 @@
   margin-left: 8px;
 }
 
-.status {
-  position: absolute;
-  bottom: -2px;
-  right: -2px;
-  background-color: #00a76f;
-  color: white;
-  border-radius: 4px;
-  padding: 1px 4px;
-  font-size: 10px;
-  font-weight: 600;
-}
-
-/*  */
-/*  */
-
 .sidebar-footer {
   padding: 16px;
-  background-color: #161c24;
-  color: white;
+  border-top: 1px solid rgba(145, 158, 171, 0.16);
 }
 
 .user-profile {
@@ -209,12 +204,11 @@
 }
 
 .avatar {
-  width: 48px;
-  height: 48px;
+  width: 40px;
+  height: 40px;
   border-radius: 50%;
   object-fit: cover;
 }
-
 .free-badge {
   position: absolute;
   top: 0;
@@ -228,6 +222,18 @@
   font-weight: 600;
 }
 
+.status {
+  position: absolute;
+  bottom: -2px;
+  right: -2px;
+  background-color: #00a76f;
+  color: white;
+  border-radius: 4px;
+  padding: 1px 4px;
+  font-size: 10px;
+  font-weight: 600;
+}
+
 .user-info {
   display: flex;
   flex-direction: column;
@@ -236,16 +242,21 @@
 }
 
 .username {
-  margin: 0;
-  font-size: 0.65rem;
+  font-size: 14px;
   font-weight: 600;
-  color: white;
+  color: #fff;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .email {
+  font-size: 14px;
+  color: #637381;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
   margin: 0;
-  font-size: 0.7rem;
-  color: #4c5863;
 }
 
 .upgrade-button {
@@ -266,5 +277,28 @@
 }
 
 .upgrade-button:hover {
-  background-color: #454f5b;
+  background-color: #2d3748;
+}
+
+/* Media queries for responsive design */
+@media (max-width: 768px) {
+  .sidebar.expanded {
+    width: 240px;
+  }
+
+  .sidebar.collapsed {
+    width: 72px;
+  }
+}
+
+@media (max-width: 480px) {
+  .sidebar.collapsed {
+    width: 0;
+    transform: translateX(-100%);
+  }
+
+  .sidebar.expanded {
+    width: 240px;
+    transform: translateX(0);
+  }
 }
