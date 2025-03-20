@@ -2,7 +2,6 @@ import React, { useState } from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./App.css";
 import Sidebar from "./pages/Sidebar/Sidebar";
-import Navbar from "./components/BookingComp/Navbar";
 import BookingDashboard from "./pages/BookingDashboard";
 
 function App() {
@@ -20,7 +19,6 @@ function App() {
           sidebarExpanded ? "sidebar-expanded" : "sidebar-collapsed"
         }`}
       >
-        <Navbar />
         <BookingDashboard />
       </div>
     </div>
