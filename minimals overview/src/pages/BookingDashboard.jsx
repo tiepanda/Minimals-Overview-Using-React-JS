@@ -8,7 +8,7 @@ import BookedStatusBar2 from "../components/BookingComp/BookedStatusBar2";
 import ToursAvailable from "../components/BookingComp/ToursAvailable";
 import Statistics from "../components/BookingComp/Statistics";
 import CustomerReviews from "../components/BookingComp/CustomerReviews";
-import NewestBooking from "../components/BookingComp/NewestBooking";
+import NewestBooking from "../components/BookingComp/NewestBooking/NewestBooking";
 import BookingDetails from "../components/BookingComp/BookingDetails";
 import {
   statsData,
@@ -101,8 +101,8 @@ const BookingDashboard = () => {
 
       <Row className="py-2">
         <Col
-          lg={12}
           xl={8}
+          lg={8}
           className="card pt-2 shadow-sm"
           style={{
             height: "0%",
@@ -115,11 +115,11 @@ const BookingDashboard = () => {
             className="card "
             style={{ borderRadius: "16px", border: "none" }}
           >
-            <Row className="card-body p-2">
-              <Col lg={12} xl={6}>
+            <Row className="card-body p-2 ">
+              <Col xl={6} lg={6} md={6}>
                 <TotalIncomeGraph />
               </Col>
-              <Col lg={12} xl={6}>
+              <Col xl={6} lg={6} md={6}>
                 {/* Using state for BookedStatusBar */}
                 <BookedStatusBar initialBookedData={bookedstatusdata} />
               </Col>
@@ -136,16 +136,16 @@ const BookingDashboard = () => {
             </div>
           </div>
         </Col>
-        <Col lg={12} xl={4} className="px-2">
+        <Col xl={4} lg={4} className="px-2">
           <ToursAvailable />
         </Col>
       </Row>
 
       <Row className="">
-        <Col lg={12} xl={8} className="">
+        <Col lg={8} xl={8} className="">
           <Statistics />
         </Col>
-        <Col lg={12} xl={4} className="">
+        <Col lg={4} xl={4} className="">
           <CustomerReviews reviews={customerReviewsData} />
         </Col>
       </Row>
