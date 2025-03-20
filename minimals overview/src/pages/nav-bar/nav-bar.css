@@ -1,188 +1,190 @@
 .main-navbar {
-    position: sticky;
-    top: 0;
-    width: 100%;
-    z-index: 1000;
-    background: rgba(255, 255, 255, 0.816);
-    backdrop-filter: blur(5px);
+  position: sticky;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+  background: rgba(255, 255, 255, 0.816);
+  backdrop-filter: blur(5px);
 }
 
 .navbar-container {
-    height: 72px;
-    width: 100%;
-    margin-left: auto;
-    box-sizing: border-box;
-    display: flex;
-    -webkit-box-align: center;
-    align-items: center;
-    padding-left: 40px;
-    padding-right: 40px;
+  height: 72px;
+  width: 100%;
+  margin-left: auto;
+  box-sizing: border-box;
+  display: flex;
+  -webkit-box-align: center;
+  align-items: center;
+  padding-left: 40px;
+  padding-right: 40px;
 }
 
 .nav-left-button {
-    width: 100%;
-    display: inline-flex;
-    align-items: center;
-    position: relative;
-    background-color: transparent;
-    outline: 0px;
-    border: 0px;
-    margin: 0px;
-    cursor: pointer;
-    user-select: none;
-    vertical-align: middle;
-    padding-top: 4px;
-    padding-bottom: 4px;
-    gap: 5px;
+  width: 100%;
+  display: inline-flex;
+  align-items: center;
+  position: relative;
+  background-color: transparent;
+  outline: 0px;
+  border: 0px;
+  margin: 0px;
+  cursor: pointer;
+  user-select: none;
+  vertical-align: middle;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  gap: 5px;
 }
 
 .nav-left-image {
-    width: 24px;
-    height: 24px;
-    border-radius: 50%;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
 }
 
 .nav-left-title {
-    font-weight: 600;
-    font-size: 0.875rem;
-    line-height: 1.57143;
+  font-weight: 600;
+  font-size: 0.875rem;
+  line-height: 1.57143;
 }
 
 .nav-left-subtitle {
-    min-width: 24px;
-    align-items: center;
-    justify-content: center;
-    font-size: 0.75rem;
-    font-weight: 700;
-    /* color: #637381;
+  min-width: 24px;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.75rem;
+  font-weight: 700;
+  /* color: #637381;
     background: rgba(128, 128, 128, 0.2); */
-    cursor: inherit;
-    white-space: nowrap;
-    gap: 6px;
-    padding: 0px 6px;
-    border-radius: 6px;
-    transition: 200ms cubic-bezier(0.4, 0, 0.2, 1);
+  cursor: inherit;
+  white-space: nowrap;
+  gap: 6px;
+  padding: 0px 6px;
+  border-radius: 6px;
+  transition: 200ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 /* Following code is for dropdown menu */
 .nav-left-active:hover {
-    background-color: rgba(145 158 171 / 0.16);
-    border-radius: 5px;
-    line-height: 6px;
+  background-color: rgba(145 158 171 / 0.16);
+  border-radius: 5px;
+  line-height: 6px;
 }
 
 .nav-drop {
-    list-style: none;
-    margin: 0px;
-    padding: 8px 0px;
-    position: relative;
-    width: 210px;
+  list-style: none;
+  margin: 0px;
+  /* padding: 0; */
+  position: relative;
+  width: 210px;
 }
 
 .nav-drop-container {
-    background-color: white;
-    background-image: url(/src/nav/Image/nav-drop1.svg), url(/src/nav/Image/nav-drop2.svg);
-    background-size: 50%, 50%;
-    background-repeat: no-repeat;
-    background-color: rgba(var(255 255 255 0.9));
-    box-shadow: 0 0 2px 0 rgba(145 158 171 / 0.24), -20px 20px 40px -4px rgba(145 158 171 / 0.24);
-    background-position: right top, left bottom;
-    padding: calc(4px);
-    border-radius: 10px;
+  background-color: white;
+  background-image: url(/src/assets/images/NavBar-Images/nav-drop1.svg),
+    url(/src/assets/images/NavBar-Images/nav-drop2.svg);
+  background-size: 50%, 50%;
+  background-repeat: no-repeat;
+  background-color: rgba(var(255 255 255 0.9));
+  box-shadow: 0 0 2px 0 rgba(145 158 171 / 0.24),
+    -20px 20px 40px -4px rgba(145 158 171 / 0.24);
+  background-position: right top, left bottom;
+  padding: calc(4px);
+  border-radius: 10px;
 }
 
 .nav-drop-left-title {
-    margin-left: 10px;
+  margin-left: 10px;
 }
 
 .nav-drop-left-subtitle {
-    margin-left: 70px;
+  margin-left: 70px;
 }
 
 /* This is for the gap in middle */
 .nav-divider {
-    display: flex;
-    flex: 1 1 auto;
-    -webkit-box-pack: center;
-    justify-content: center;
+  display: flex;
+  flex: 1 1 auto;
+  -webkit-box-pack: center;
+  justify-content: center;
 }
 
 /* This is for the right side of navbar */
 .nav-right-container {
-    display: flex;
-    align-items: center;
+  display: flex;
+  align-items: center;
 }
 
 .nav-right-button {
-    background-color: transparent;
-    cursor: pointer;
-    user-select: none;
-    padding: 0px;
-    border-radius: 50%;
-    border: none;
+  background-color: transparent;
+  cursor: pointer;
+  user-select: none;
+  padding: 0px;
+  border-radius: 50%;
+  border: none;
 }
 
 .nav-rotating-border {
-    position: absolute;
-    right: 2.%;
-    width: 40px;
-    height: 40px;
-    border-radius: 50%;
-    background: conic-gradient(#FFAB00 0deg, #217119 90deg, #FFAB00 180deg);
-    mask: radial-gradient(circle, transparent 65%, black 70%);
-    animation: navRotateBorder 8s linear infinite;
+  position: absolute;
+  right: 2%;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: conic-gradient(#ffab00 0deg, #217119 90deg, #ffab00 180deg);
+  mask: radial-gradient(circle, transparent 65%, black 70%);
+  animation: navRotateBorder 8s linear infinite;
 }
 
 @keyframes navRotateBorder {
-    0% {
-        transform: rotate(0deg);
-    }
-    100% {
-        transform: rotate(360deg);
-    }
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
 }
 
 .nav-profile-right {
-    min-width: unset;
-    min-height: unset;
-    overflow: hidden;
-    position: relative;
-    padding: 3px;
-    border-radius: 50%;
-    width: 40px;
-    height: 40px;    
+  min-width: unset;
+  min-height: unset;
+  overflow: hidden;
+  position: relative;
+  padding: 3px;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
 }
 
 .nav-Image-div {
-    position: relative;
-    justify-content: center;
-    font-size: 1.25rem;
-    line-height: 1;
-    border-radius: 50%;
-    overflow: hidden;
-    user-select: none;
-    width: 100%;
-    height: 100%;
+  position: relative;
+  justify-content: center;
+  font-size: 1.25rem;
+  line-height: 1;
+  border-radius: 50%;
+  overflow: hidden;
+  user-select: none;
+  width: 100%;
+  height: 100%;
 }
 
 .nav-profile-image {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 /* Multiple bg-color for Array  */
 .nav-bg-color-gray {
-    color: #637381;
-    background: rgba(128, 128, 128, 0.2);
-} 
+  color: #637381;
+  background: rgba(128, 128, 128, 0.2);
+}
 
 .nav-bg-color-sky1 {
-    color: #6d869c;
-    background: rgba(48, 162, 223, 0.2);
+  color: #6d869c;
+  background: rgba(48, 162, 223, 0.2);
 }
 
 .nav-bg-color-sky2 {
-    color: #6d869c;
-    background: rgba(48, 162, 223, 0.2);
+  color: #6d869c;
+  background: rgba(48, 162, 223, 0.2);
 }

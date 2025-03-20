@@ -55,10 +55,10 @@ function NavBar() {
                         {isOpen && (
                             <div>
                                 <div style={{ position: "absolute" }} className="nav-drop-container">
-                                    <ul className="nav-drop">
+                                    <ul className="nav-drop p-0 pb-2">
                                         {navData.navContent.map((team, index) => (
                                             <li key={index} style={{ marginTop: "10px" }} className="nav-left-active">
-                                                <button className="nav-left-button" onClick={() => handleSelectedTeam(team)}>
+                                                <button className="nav-left-button py-2 px-1" onClick={() => handleSelectedTeam(team)}>
                                                     <img className="nav-left-image" src={`../src/assets/Images/NavBar-Images/${team.navImage}`} />
                                                     <div>
                                                         <span className="nav-left-title nav-drop-left-title">{team.navTitle}</span>
