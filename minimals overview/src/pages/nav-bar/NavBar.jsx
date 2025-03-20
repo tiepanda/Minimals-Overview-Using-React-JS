@@ -36,7 +36,7 @@ function NavBar() {
         setIsOpen(false);
     };
 
-    const dynamicBackground = ["bg-color-gray","bg-color-sky1","bg-color-sky2"]
+    const dynamicBackground = ["nav-bg-color-gray","nav-bg-color-sky1","nav-bg-color-sky2"]
 
   return (
     <div className="main-navbar">
@@ -61,8 +61,8 @@ function NavBar() {
                                                 <button className="nav-left-button" onClick={() => handleSelectedTeam(team)}>
                                                     <img className="nav-left-image" src={`../src/assets/Images/NavBar-Images/${team.navImage}`} />
                                                     <div>
-                                                        <span className="nav-left-title drop-left-title">{team.navTitle}</span>
-                                                        <span className={`nav-left-subtitle drop-left-subtitle ${dynamicBackground[index]}`}>{team.navSubTitle}</span>
+                                                        <span className="nav-left-title nav-drop-left-title">{team.navTitle}</span>
+                                                        <span className={`nav-left-subtitle nav-drop-left-subtitle ${dynamicBackground[index]}`}>{team.navSubTitle}</span>
                                                     </div>
                                                 </button>
                                             </li>
@@ -79,7 +79,7 @@ function NavBar() {
 
                     <div className="nav-right-container">
 
-                        <div className="rotating-border"></div>
+                        <div className="nav-rotating-border"></div>
 
                         <button className="nav-right-button">
                             <div className="nav-profile-right">
