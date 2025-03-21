@@ -46,65 +46,68 @@ function Strength() {
             <div className="chart-main-container" style={{ width: "100%", height: 300, fontSize: "0.9rem" }}>
                 <h3 className="Chart-Title">Strength</h3>
 
-                <svg width={300} height={300}>
-                    {/* Draw hexagonal grid levels */}
-                    {[0.2, 0.4, 0.6, 0.8, 1].map((scale, index) => (
-                    <polygon
-                        key={index}
-                        points={generateHexagon(scale)}
-                        fill="none"
-                        stroke="#ddd"
-                        strokeWidth="1"
-                    />
-                    ))}
+                <div className="strength-chart">
+                  <svg width={300} height={300}>
+                      {/* Draw hexagonal grid levels */}
+                      {[0.2, 0.4, 0.6, 0.8, 1].map((scale, index) => (
+                      <polygon
+                          key={index}
+                          points={generateHexagon(scale)}
+                          fill="none"
+                          stroke="#ddd"
+                          strokeWidth="1"
+                      />
+                      ))}
 
-                    {/* Draw radial lines */}
-                    {Array.from({ length: sides }, (_, i) => {
-                    const { x, y } = polarToCartesian(i * angleStep, maxScore);
-                    return <line key={i} x1={centerX} y1={centerY} x2={x} y2={y} stroke="#ddd" />;
-                    })}
+                      {/* Draw radial lines */}
+                      {Array.from({ length: sides }, (_, i) => {
+                      const { x, y } = polarToCartesian(i * angleStep, maxScore);
+                      return <line key={i} x1={centerX} y1={centerY} x2={x} y2={y} stroke="#ddd" />;
+                      })}
 
-                    {/* Draw tick values inside the chart */}
-                    {[0, 20, 40, 60, 80, 100].map((tick, index) => {
-                    const y = centerY - (tick / maxScore) * radius;
-                    return (
-                        <text
-                        key={tick}
-                        x={centerX}
-                        y={y + 4}
-                        textAnchor="middle"
-                        fontSize={12}
-                        fill="#888"
-                        >
-                        {tick}
-                        </text>
-                    );
-                    })}
+                      {/* Draw tick values inside the chart */}
+                      {[0, 20, 40, 60, 80, 100].map((tick, index) => {
+                      const y = centerY - (tick / maxScore) * radius;
+                      return (
+                          <text
+                          key={tick}
+                          x={centerX}
+                          y={y + 4}
+                          textAnchor="middle"
+                          fontSize={12}
+                          fill="#888"
+                          >
+                          {tick}
+                          </text>
+                      );
+                      })}
 
-                    {/* Draw polygon representing scores */}
-                    <polygon points={points} fill="#00A76F" fillOpacity={0.5} stroke="#00A76F" strokeWidth={2} />
+                      {/* Draw polygon representing scores */}
+                      <polygon points={points} fill="#00A76F" fillOpacity={0.5} stroke="#00A76F" strokeWidth={2} />
 
-                    {/* Draw labels with improved positioning */}
-                    {data.map((d, i) => {
-                    let { x, y } = polarToCartesian(i * angleStep, maxScore + 15);
+                      {/* Draw labels with improved positioning */}
+                      {data.map((d, i) => {
+                      let { x, y } = polarToCartesian(i * angleStep, maxScore + 15);
 
-                    // Move Chinese & Physics labels slightly outward to avoid overlap
-                    if (d.subject === "Chinese") {
-                        x -= 8; 
-                        y += 5; 
-                    }
-                    if (d.subject === "Physics") {
-                        x += 8; 
-                        y += 5; 
-                    }
+                      // Move Chinese & Physics labels slightly outward to avoid overlap
+                      if (d.subject === "Chinese") {
+                          x -= 8; 
+                          y += 5; 
+                      }
+                      if (d.subject === "Physics") {
+                          x += 8; 
+                          y += 5; 
+                      }
 
-                    return (
-                        <text key={d.subject} x={x} y={y} textAnchor="middle" fontSize={14} fill="#555">
-                        {d.subject}
-                        </text>
-                    );
-                    })}
-                </svg>
+                      return (
+                          <text key={d.subject} x={x} y={y} textAnchor="middle" fontSize={14} fill="#555">
+                          {d.subject}
+                          </text>
+                      );
+                      })}
+                  </svg>
+                </div>
+
             </div>
 
         </div>      
