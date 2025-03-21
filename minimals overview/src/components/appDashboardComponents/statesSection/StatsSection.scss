@@ -1,0 +1,143 @@
+.stats-section {
+    display: flex;
+    gap: 20px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  
+    .stat-card {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background: white;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 4px 5px 8px rgba(0, 0, 0, 0.1);
+      width: 300px;
+      
+
+      flex: 1; // Makes each card take equal width
+        max-width: 32%; // Prevents them from stretching too much
+        min-width: 280px; // Ensures they don't shrink too much
+  
+      .stat-details {
+        h4 {
+          font-size: 14px;
+          color: #575757;
+        }
+        .stat-value {
+          font-size: 24px;
+          font-weight: bold;
+        }
+        .stat-change {
+          font-size: 12px;
+          &.up {
+            color: green;
+          }
+          &.down {
+            color: red;
+          }
+        }
+      }
+
+
+      .stats-container {
+        margin-top: 40px;
+        display: flex;
+        margin-top: 40px;
+        padding-top: 50px;
+        justify-content: space-between; // Distributes cards evenly
+        gap: 20px; // Adds spacing between them
+        align-items: stretch; // Ensures all cards have the same height
+      }
+
+
+
+      
+  
+      .bar-graph {
+        display: flex;
+        align-items: flex-end;
+        gap: 4px;
+        height: 50px;
+  
+        .bar {
+          width: 6px;
+          border-radius: 4px;
+          position: relative;
+          transition: opacity 0.1s;
+  
+          &.green {
+            background-color: #00b894;
+          }
+          &.blue {
+            background-color: #0984e3;
+          }
+          &.red {
+            background-color: #d63031;
+          }
+  
+          &:hover {
+            // opacity: 0.7;
+            &.green{
+                background-color: #066350;
+            }
+            &.blue{
+                background-color: #0b4b7b;
+            }
+            &.red{
+                background-color: #961f1f;
+            }
+          }
+  
+          .tooltip-box {
+            position: absolute;
+            bottom: 100%;
+            left: 50%;
+            transform: translateX(-50%);
+            background: white;
+            border-radius: 8px;
+            padding: 6px 12px;
+            font-size: 12px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            white-space: nowrap;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 5px;
+  
+            .tooltip-content {
+              display: flex;
+              flex-direction: column;
+              align-items: center;
+              gap: 5px;
+  
+              strong {
+                font-size: 13px;
+                font-weight: bold;
+                color: #333;
+              }
+  
+              .tooltip-info {
+                display: flex;
+                align-items: center;
+                gap: 5px;
+  
+                .dot {
+                  width: 8px;
+                  height: 8px;
+                  border-radius: 50%;
+                  display: inline-block;
+                }
+  
+                span {
+                  font-size: 13px;
+                  color: #555;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  

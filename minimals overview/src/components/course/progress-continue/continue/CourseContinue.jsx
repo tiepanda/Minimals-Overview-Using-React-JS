@@ -50,8 +50,8 @@ function CourseContinue() {
             return (
                 <div key={i} className='main-contentss'>
                     <div className='sub-content'>
-                        <div className='image-container'>
-                            <img className='image' src={`../src/assets/images/Course-Images/course-continue/${item.continueImage}`} />
+                        <div className='course-image-container'>
+                            <img className='course-image' src={`../src/assets/images/Course-Images/course-continue/${item.continueImage}`} />
                         </div>
 
                         <div className='data-content'>

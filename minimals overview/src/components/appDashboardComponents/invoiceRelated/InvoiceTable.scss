@@ -1,0 +1,689 @@
+.invoice-container {
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 4px 8px 10px rgba(0, 0, 0, 0.1);
+    font-family: Arial, sans-serif;
+
+    
+    .invoice-title {
+      font-size: 18px;
+      font-weight: bold;
+      margin-bottom: 15px;
+    }
+  
+    .invoice-table {
+      width: 100%;
+      border-collapse: collapse;
+  
+      th {
+        text-align: left;
+        padding: 10px;
+        background: #f5f6f8;
+        font-weight: bold;
+      }
+  
+      td {
+        padding: 10px;
+        border-bottom: 1px solid #eaeaea;
+      }
+  
+      .status {
+        padding: 5px 10px;
+        border-radius: 4px;
+        font-size: 14px;
+        font-weight: bold;
+        display: inline-block;
+  
+        &.paid {
+          background: #d4f5e9;
+          color: #27ae60;
+        }
+  
+        &.out-of-date {
+          background: #f8d7da;
+          color: #dc3545;
+        }
+  
+        &.progress {
+          background: #ffecb3;
+          color: #d39e00;
+        }
+      }
+    }
+  
+    .view-all {
+      margin-top: 10px;
+      color: #007bff;
+      font-weight: bold;
+      cursor: pointer;
+      text-align: right;
+    }
+  }
+
+  .invoice-container {
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    // box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    font-family: Arial, sans-serif;
+    flex: 2; // Takes more space
+    min-width: 60%;
+
+    .app {
+      flex: 1; // Takes less space
+      min-width: 35%;
+    }
+  
+    .invoice-title {
+      font-size: 18px;
+      font-weight: bold;
+      margin-bottom: 15px;
+    }
+  
+    .invoice-table {
+      width: 100%;
+      border-collapse: collapse;
+  
+      th {
+        text-align: left;
+        padding: 10px;
+        background: #f5f6f8;
+        font-weight: bold;
+      }
+  
+      td {
+        padding: 10px;
+        border-bottom: 1px solid #eaeaea;
+      }
+  
+      .status {
+        padding: 5px 12px;
+        border-radius: 20px;
+        font-size: 14px;
+        font-weight: bold;
+        display: inline-block;
+        text-transform: capitalize;
+  
+        &.paid {
+          background: #e6f9f1;
+          color: #15803d;
+        }
+  
+        &.out-of-date {
+          background: #ffcfcf;
+          color: #b91c1c;
+          border-radius: 20px;
+          padding: 6px 14px;
+        }
+  
+        &.progress {
+          background: #fff3cd;
+          color: #d39e00;
+        }
+      }
+    }
+  
+    .options-header {
+        width: 50px; /* Set width for the extra column */
+      }
+  
+      .options-cell {
+        text-align: center;
+        cursor: pointer;
+        width: 50px;
+      }
+  
+      .three-dots {
+        font-weight: bold;
+        font-size: 18px;
+        color: #6c757d;
+        cursor: pointer;
+        transition: color 0.3s ease-in-out;
+  
+        &:hover {
+          color: #333;
+        }
+      }
+
+    .view-all {
+      margin-top: 10px;
+      color: #151515;
+      font-weight: bold;
+      cursor: pointer;
+      text-align: right;
+    }
+  }
+
+  .dashboard-container {
+    display: flex;
+    gap: 20px;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 20px;
+  }
+  
+  .invoice-container, .related-apps-container, .image-container {
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    // box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .invoice-container, .related-apps-container {
+    flex: 1;
+  }
+  
+  .image-container {
+    max-width: 300px;
+  }
+  
+  .app-image {
+    width: 100%;
+    border-radius: 10px;
+  }
+  
+  .invoice-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+  }
+  
+  .invoice-table th, .invoice-table td {
+    padding: 10px;
+    text-align: left;
+  }
+
+  .invoice-table th{
+    color: #828790;
+    font-size: 13px;
+  }
+  
+  .status {
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-weight: bold;
+  }
+  
+  .status.paid {
+    color: #27ae60;
+    background: #e9f7ef;
+  }
+  
+  .status.out-of-date {
+    color: #e74c3c;
+    background: #fdecea;
+  }
+  
+  .status.progress {
+    color: #f39c12;
+    background: #fdf5e6;
+  }
+  
+  .tabs {
+    display: flex;
+    gap: 10px;
+    margin: 10px 0;
+  }
+  
+  .tabs button {
+    padding: 8px 15px;
+    border: none;
+    background: #f5f5f5;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .tabs button.active {
+    background: #007bff;
+    color: white;
+  }
+  
+  .app-list {
+    list-style: none;
+    padding: 0;
+    margin-top: 10px;
+  }
+  
+  .app-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  .app-logo {
+    width: 40px;
+    height: 40px;
+  }
+  
+  .app-details {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .app-price.free {
+    // color: #27ae60;
+
+    background: #eeeeee;
+    color: rgb(141, 139, 139);
+    padding: 1px 3px;
+    border-radius: 5px;
+    font-weight: bold;
+  }
+  
+  .app-price.paid {
+    background: #27ae60;
+    color: white;
+    padding: 3px 8px;
+    border-radius: 5px;
+    font-weight: bold;
+  }
+
+  .tabs-container {
+  display: flex;
+  background: #f5f7fa;  // Light background
+  padding: 8px 12px;
+  border-radius: 8px;
+}
+
+.tab {
+  flex: 1;
+  padding: 10px 16px;
+  border: none;
+  background: transparent;
+  color: #8a8f98;
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.5s ease;
+
+  &:hover {
+    color: #333;
+  }
+}
+
+.active {
+  background: white;
+  color: black;
+  font-weight: 600;
+  border-radius: 6px;
+  box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.action-menu {
+  position: relative;
+  cursor: pointer;
+  font-size: 18px;
+  text-align: center;
+  padding: 5px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 24px; // Small circular size
+  height: 24px;
+  transition: background-color 0.3s ease-in-out; // Smooth transition
+
+  &:hover {
+    background-color: rgba(0, 0, 0, 0.15); // Light gray on hover
+  }
+
+  &.active {
+    background-color: rgba(0, 0, 0, 0.4); // Darker gray on click
+  }
+}
+
+.action-menu {
+  cursor: pointer;
+  font-size: 1.5rem;
+  padding: 8px;
+  border-radius: 50%;
+  transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+
+  &.hovered {
+    background-color: rgb(229, 229, 229); // Light gray circle on hover
+  }
+
+  &.clicked {
+    background-color: rgb(198, 192, 192); // Darker gray on click
+  }
+}
+
+.action-menu-container {
+  position: relative;
+  display: inline-block;
+  height: 45px;
+
+  .action-menu {
+    cursor: pointer;
+    font-size: 20px;
+    padding: 5px;
+  }
+
+  .dropdown-menu {
+    position: absolute;
+    right: 0;
+    top: 30px;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.15);
+    min-width: 150px;
+    z-index: 10;
+    overflow: hidden;
+    
+    ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+
+      li {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        padding: 10px;
+        cursor: pointer;
+        transition: background 0.3s;
+
+        i {
+          font-size: 16px;
+        }
+
+        &:hover {
+          background: #f4f6f8;
+        }
+
+        &.delete {
+          color: #d32f2f;
+          font-weight: bold;
+        }
+      }
+    }
+  }
+}
+
+.action-menu-container {
+  position: relative;
+  display: inline-block;
+
+  .action-menu {
+    cursor: pointer;
+    font-size: 1.5rem;
+    transition: transform 0.2s ease-in-out;
+
+    &:hover {
+      transform: scale(1.2);
+    }
+  }
+
+  .dropdown-menu {
+    position: absolute;
+    top: 120%;
+    right: 0;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    width: 160px;
+    opacity: 0;
+    transform: translateY(-15px);
+    visibility: hidden;
+    transition: opacity 0.4s ease-out, transform 0.4s ease-out, visibility 0.4s ease-out;
+
+    ul {
+      list-style: none;
+      padding: 10px;
+      margin: 0;
+
+      li {
+        padding: 12px;
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        font-size: 14px;
+        cursor: pointer;
+        transition: background 0.2s ease-in-out;
+
+        &:hover {
+          background: #f5f5f5;
+        }
+      }
+
+      .delete {
+        color: red;
+
+        &:hover {
+          background: #ffe6e6;
+        }
+      }
+    }
+  }
+
+  .dropdown-menu.active {
+    opacity: 1;
+    transform: translateY(0);
+    visibility: visible;
+  }
+}
+
+
+
+.invoice-container {
+  display: flex;
+  font-size: 12px;
+  flex-direction: column;
+  position: relative; // Ensures positioning works correctly
+}
+
+.view-all {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  cursor: pointer;
+  padding: 8px 12px;
+  border-radius: 9px;
+  transition: background-color 0.3s ease;
+  align-self: flex-end; // Moves it to the right side
+
+  &:hover {
+    background-color: #ededed; // Light grey on hover
+  }
+
+  &:active {
+    background-color: #d6d5d5; // Dark grey on click
+  }
+}
+
+.app-slider {
+  overflow: hidden;
+  width: 100%;
+  position: relative;
+}
+
+
+.app-item {
+  width: 100%;
+  // flex: 0 0 33.33%;
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  padding: 10px;
+  border-bottom: 1px solid #ddd;
+  margin-bottom: 15px;
+  margin-top: 12px;
+}
+
+.app-logo {
+  width: 40px;
+  height: 40px;
+}
+
+.app-details {
+  display: flex;
+  flex-direction: column;
+  font-size: 12px;
+}
+
+.app-price {
+  font-weight: bold;
+}
+
+
+
+
+
+
+
+
+.app-meta {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.app-meta span {
+  display: flex;
+  align-items: center;
+  gap: 5px; /* Space between icon and text */
+}
+
+.app-meta svg {
+  color: #9e9e9e; /* Adjust icon color */
+  font-size: 16px; /* Adjust icon size */
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// .status-label {
+//   display: inline-block;
+//   background-color: rgb(132, 19, 38); // Default background (for "Paid")
+//   color: #fff; // White text for contrast
+//   padding: 2px 6px; // Less padding for a thin background
+//   border-radius: 4px; // Small rounded edges
+//   font-weight: bold;
+//   text-align: center;
+//   font-size: 1px;
+//   font-size: 14px; // Adjust font size for readability
+
+//   &.paid {
+//     background-color: pink;
+//     color: #333;
+//   }
+
+//   &.out-of-date {
+//     background-color: pink;
+//     color: red;
+//   }
+
+//   &.progress {
+//     background-color: rgb(255, 221, 126);
+//     color: orange;
+//   }
+// }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.status-label {
+  display: inline-block;
+  width: 70px; // Fixed width for consistency
+  text-align: center;
+  font-size: 10px;
+  font-weight: bold;
+  padding: 4px 6px;
+  border-radius: 7px;
+  margin-top: 4px; // Adds spacing below "Status" text
+
+  &.paid {
+    background-color: rgb(169, 224, 159);
+    color: rgb(22, 66, 20);
+  }
+
+  &.out-of-date {
+    background-color: rgb(255, 207, 215);
+    color: rgb(126, 71, 71);
+  }
+
+  &.progress {
+    background-color: rgb(247, 201, 115);
+    color:rgb(128, 89, 16);
+  }
+}
+
+
+
+
+
+
+
+
+
+
+.status.paid {
+  color: #27ae60;
+  background: #e9f7ef;
+}
+
+.status.out-of-date {
+  color: #e74c3c;
+  background: #fdecea;
+}
+
+.status.progress {
+  color: #f39c12;
+  background: #fdf5e6;
+}
+
+
+
+
+
+
+
+
+
+
+
+.app-price {
+  font-size: 12px;
+  font-weight: bold;
+  padding: 2px 6px;
+  border-radius: 4px;
+  margin-left: 4px; // Space between app name and price
+  display: inline-block;
+}
+
+.free {
+  background-color: lightgreen;
+  color: darkgreen;
+}
+
+.paid {
+  background-color: pink;
+  color: darkred;
+}

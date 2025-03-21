@@ -79,12 +79,12 @@ function CourseGraph() {
       <div className="container-fluid">
         <div className="row g-0 mt-5">
           <div className="col-sm-8 col-md-12">
-            <div className="dashboard-container">
-              <div className="header">
-                <h2 className="title">Hours spent</h2>
+            <div className="course-dashboard-container">
+              <div className="course-header">
+                <h2 className="course-title">Hours spent</h2>
 
                 <div className="custom-select">
-                  <button className="dropdown-button" onClick={toggleDropdown}>
+                  <button className="course-dropdown-button" onClick={toggleDropdown}>
                     {timeFrame}
                     <svg
                       style={{

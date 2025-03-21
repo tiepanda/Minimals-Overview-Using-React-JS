@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import './nav-bar.css'
+import ProfileMenu from "../profileMenu/ProfileMenu";
 
 const navData = {
     navContent: [
@@ -82,12 +83,14 @@ function NavBar() {
                         <div className="nav-rotating-border"></div>
 
                         <button className="nav-right-button">
-                            <div className="nav-profile-right">
+                            {/* <div className="nav-profile-right">
                                 <div className="nav-Image-div">
                                     <img className="nav-profile-image" src={`../src/assets/Images/NavBar-Images/avatar.webp`} />
                                 </div>
-                            </div>
+                            </div> */}
                         </button>
+
+                        <ProfileMenu />                        
 
                     </div>
                 </div>
