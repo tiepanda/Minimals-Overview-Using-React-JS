@@ -1,0 +1,255 @@
+.container {
+    margin-top: 5%;
+}
+
+.slide-Header {
+  display: flex;
+  -webkit-box-align: center;
+  align-items: center;
+}
+
+.sliding-Heading {
+  font-size: 1.125rem;
+  margin: 0px;
+  font-weight: 600;
+  line-height: 1.55556;
+  -webkit-box-flex: 1;
+  flex-grow: 1;
+}
+
+.left-right-container {
+  gap: 4px;
+  z-index: 9;
+  align-items: center;
+  display: inline-flex;
+}
+
+.material-icons {
+  border: none;
+  border-radius: 50%;
+  background: none;
+}
+
+.main-slide-container {
+  margin: auto;
+  max-width: 100%;
+  overflow: hidden;
+  position: relative;
+  padding-left: 4px;
+  padding-right: 4px;
+  user-select: none;
+}
+
+.slide-content {
+  backface-visibility: hidden;
+  touch-action: pan-y pinch-zoom;
+  margin-left: -24px;
+  margin-top: 35px;
+}
+
+.main-sList-content {
+  flex: 0 0 30%;
+  display: flex;
+}
+
+.sList-item-container {
+  background-color: white;
+  color: #1c252e;
+  background-image: none;
+  position: relative;
+  box-shadow: 0 0 2px 0 rgba(145 158 171 / 0.2),
+    0 12px 24px -4px rgba(145 158 171 / 0.12);
+  z-index: 0;
+  width: 100%;
+  transition: cubic-bezier(0.4, 0, 0.2, 1);
+  overflow: hidden;
+  border-radius: 16px;
+}
+
+.sList-image-container {
+  padding-left: 8px;
+  padding-right: 8px;
+  padding-top: 8px;
+}
+
+.sList-span {
+  max-width: 100%;
+  overflow: hidden;
+  position: relative;
+  display: inline-block;
+  vertical-align: bottom;
+  aspect-ratio: 5 / 4;
+  width: 100%;
+  border-radius: 12px;
+}
+
+.sList-image {
+  width: 100%;
+  height: 100%;
+  display: inherit;
+  aspect-ratio: inherit;
+  border-radius: inherit;
+  object-fit: cover;
+}
+
+.sList-text-container {
+  padding-left: 16px;
+  padding-right: 16px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.sList-timing-container {
+  gap: 8px;
+  margin-bottom: 12px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.sList-timing .sList-contact {
+  font-weight: 400;
+  font-size: 0.75rem;
+  line-height: 1.5;
+  color: #637381;
+}
+
+.sList-Heading {
+  margin: 0px;
+  font-weight: 600;
+  line-height: 1.57143;
+  text-decoration: none;
+  color: inherit;
+  overflow: hidden;
+  display: -webkit-box;
+  text-overflow: ellipsis;
+  -webkit-box-orient: vertical;
+  height: 44px;
+}
+
+.sList-price-container {
+  margin-top: 20px;
+  gap: 4px;
+  display: flex;
+  -webkit-box-align: center;
+  align-items: center;
+}
+
+.sList-price {
+  font-weight: 600;
+  line-height: 1.55556;
+  font-size: 1.125rem;
+}
+
+.sList-year {
+  font-weight: 400;
+  font-size: 0.875rem;
+  line-height: 1.57143;
+  -webkit-box-flex: 1;
+  flex-grow: 1;
+}
+
+.sList-button {
+  display: inline-flex;
+  -webkit-box-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  justify-content: center;
+  position: relative;
+  box-sizing: border-box;
+  cursor: pointer;
+  user-select: none;
+  vertical-align: middle;
+  appearance: none;
+  font-weight: 700;
+  line-height: 1.71429;
+  text-transform: unset;
+  min-width: 64px;
+  font-size: 0.8125rem;
+  box-shadow: none;
+  color: #ffffff;
+  background-color: #1c252e;
+  height: 30px;
+  outline: 0px;
+  margin: 0px;
+  text-decoration: none;
+  border-width: 0px;
+  border-style: initial;
+  border-image: initial;
+  border-radius: 8px;
+  border-color: #ffffff;
+  padding: 4px 8px;
+}
+
+.material-icons {
+  border: none;
+  cursor: pointer;
+  font-size: 24px;
+  padding: 8px;
+}
+
+.slide-carousel {
+    display: flex;
+}
+
+
+/* Sliding Animation */ 
+
+.slide-container {
+  overflow: hidden; /* Hide the overflowing slides */
+  width: 100%;
+}
+
+.slide-carousel {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+  width: 100%; /* Ensure enough space for sliding */
+}
+
+.main-slide-container {
+  flex: 0 0 calc(100% / 3); /* Each slide takes up 1/3rd of the container */
+  padding: 0 10px;
+}
+
+/* Responsive styles */
+@media (max-width: 1024px) {
+  .main-slide-container {
+    flex: 0 0 calc(100% / 3); /* Each slide takes up 1/3rd of the container */
+  }
+}
+
+@media (max-width: 800px) {
+  .main-slide-container {
+    flex: 0 0 calc(100%); /* Each slide takes up the full width of the container */
+  }
+}
+
+.sList-item-container {
+  background-color: white;
+  color: #1c252e;
+  box-shadow: 0 0 2px 0 rgba(145, 158, 171, 0.2),
+    0 12px 24px -4px rgba(145, 158, 171, 0.12);
+  border-radius: 16px;
+  overflow: hidden;
+}
+
+.sList-image-container img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+.sList-text-container {
+  padding: 10px;
+}
+
+.left-right-container {
+  gap: 4px;
+  display: flex;
+}
+
+.material-icons {
+  border: none;
+  cursor: pointer;
+  font-size: 24px;
+  padding: 8px;
+}

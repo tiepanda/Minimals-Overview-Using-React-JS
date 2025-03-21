@@ -6,7 +6,7 @@ import "./ProfileMenu.scss";
 const ProfileMenu = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [hoveredAvatar, setHoveredAvatar] = useState(null);
-
+ 
   const avatars = [
     { id: 1, name: "Ashi", image: "https://assets.minimals.cc/public/assets/images/mock/avatar/avatar-2.webp" },
     { id: 2, name: "Keerthana", image: "https://assets.minimals.cc/public/assets/images/mock/avatar/avatar-3.webp" },
@@ -24,50 +24,56 @@ const ProfileMenu = () => {
     return () => document.removeEventListener("keydown", handleKeyDown);
   }, []);
 
+ 
   const handleClose = () => setIsOpen(false);
   const handleShow = () => setIsOpen(true);
-
+ 
   return (
     <div className="profile-container">
       {/* Profile Button */}
-      <Button 
-        variant="link" 
-        className="profile-btn p-0" 
-        onClick={handleShow} 
+      <Button
+        variant="link"
+        className="profile-btn p-0"
+        onClick={handleShow}
         aria-label="Open profile menu"
       >
-        <img 
-          src="https://assets.minimals.cc/public/assets/images/mock/avatar/avatar-25.webp" 
-          alt="Profile" 
-          className="profile-img" 
+        <img
+          src="https://assets.minimals.cc/public/assets/images/mock/avatar/avatar-25.webp"
+          alt="Profile"
+          className="profile-img"
         />
       </Button>
-
+ 
       {/* React Bootstrap Offcanvas */}
-      <Offcanvas 
-        show={isOpen} 
-        onHide={handleClose} 
+      <Offcanvas
+        show={isOpen}
+        onHide={handleClose}
+
         placement="end"
         className="profile-offcanvas"
       >
         <Offcanvas.Header className="border-0">
-          <button 
-            type="button" 
-            className="btn-close" 
-            onClick={handleClose} 
+
+          <button
+            type="button"
+            className="btn-close"
+            onClick={handleClose}
             aria-label="Close"
           ></button>
         </Offcanvas.Header>
-        
+       
+
         <Offcanvas.Body className="d-flex flex-column px-4 pt-0">
           {/* Profile Header */}
           <div className="profile-header text-center mb-4">
             <div className="position-relative mx-auto mb-3">
-              <div className="avatar-ring-green"></div> 
-              <img 
-                src="https://assets.minimals.cc/public/assets/images/mock/avatar/avatar-25.webp" 
-                alt="User" 
-                className="user-avatar" 
+
+              <div className="avatar-ring-green"></div>
+              <img
+                src="https://assets.minimals.cc/public/assets/images/mock/avatar/avatar-25.webp"
+                alt="User"
+                className="user-avatar"
+
               />
             </div>
             <h3 className="fw-semibold mb-1">Jaydon Frankie</h3>
@@ -158,15 +164,17 @@ const ProfileMenu = () => {
                 <span className="menu-text">Account settings</span>
               </li>
             </ul>
-            
+
             {/* Promo Card */}
             <div className="promo-card mt-4">
               <h3 className="promo-title">35% OFF</h3>
               <p className="promo-text">Power up Productivity!</p>
               <button className="upgrade-btn">Upgrade to Pro</button>
-              <img 
-                src="https://assets.minimals.cc/public/assets/illustrations/illustration-rocket-small.webp" 
-                alt="Rocket" 
+
+              <img
+                src="https://assets.minimals.cc/public/assets/illustrations/illustration-rocket-small.webp"
+                alt="Rocket"
+
                 className="promo-img"
               />
             </div>
@@ -183,5 +191,6 @@ const ProfileMenu = () => {
     </div>
   );
 };
-
+ 
 export default ProfileMenu;
+ 

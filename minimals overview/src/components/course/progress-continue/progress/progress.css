@@ -1,0 +1,120 @@
+.main-cardss {
+  background-color: #ffffff;
+  color: #1c252e;
+  background-image: none;
+  position: relative;
+  box-shadow: 0 0 2px 0 rgba(145 158 171 / 0.2),
+    0 12px 24px -4px rgba(145 158 171 / 0.12);
+  z-index: 0;
+  overflow: hidden;
+  border-radius: 16px;
+}
+
+.progress-header {
+  display: flex;
+  -webkit-box-align: center;
+  align-items: center;
+  padding: 24px 24px 0px 24px;
+}
+
+.progress-title-container {
+  flex: 1 1 auto;
+}
+
+.progress-title {
+  margin: 0;
+  font-weight: 600;
+  line-height: 1.55556;
+  font-size: 1.125rem;
+}
+
+/* -------------------------------- */
+/* From next styles is for chart graph  */
+/* -------------------------------- */
+
+.progress-chart {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+
+.Hovered-Graph-Text {
+  position: fixed;
+  background-color: white;
+  padding: 6px 10px;
+  border-radius: 6px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  font-size: 12px;
+  font-weight: bold;
+  pointer-events: none;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  white-space: nowrap;
+  z-index: 1000;
+}
+
+.Hovered-dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+}
+
+/* -------------------------------- */
+/* From next styles is for UL Lists  */
+/* -------------------------------- */
+
+.unorder-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  padding: 18px;
+  -webkit-box-align: center;
+  justify-content: center;
+}
+
+.list-container {
+  display: flex;
+  flex-direction: row;
+}
+
+.uolist-data {
+  gap: 6px;
+  -webkit-box-align: center;
+  align-items: center;
+  display: inline-flex;
+  -webkit-box-pack: start;
+  justify-content: flex-start;
+  font-size: 0.8125rem;
+  font-weight: 500;
+}
+
+.list-color {
+  width: 12px;
+  height: 12px;
+  flex-shrink: 0;
+  display: flex;
+  border-radius: 50%;
+  position: relative;
+  -webkit-box-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  justify-content: center;
+  background-color: rgba(145, 158, 171, 0.24);
+  margin-left: 10px;
+}
+
+.color-gray {
+  background: #e6e9ed;
+}
+
+.color-green {
+  background: #118650;
+}
+
+.color-yellow {
+  background: #fda600;
+}
