@@ -526,3 +526,4 @@ const darkenColor = (hex) => {
 
 export default DownloadAnalytics;
 
+
