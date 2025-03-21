@@ -262,22 +262,6 @@
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 import React, { useState } from "react";
 import {
   PieChart, Pie, Cell, ResponsiveContainer, Tooltip, BarChart, Bar,
@@ -413,7 +397,21 @@ const [currentBarData, setCurrentBarData] = useState(barDataByYear["2023"]);
                   : totalDownloads.toLocaleString()}
               </text>
 
-              <Tooltip />
+              {/* <Tooltip />
+              <Tooltip
+          formatter={(value) => [
+            `${((value / totalDownloads) * 100).toFixed(1)}%`,
+            name,
+          ]}
+        /> */}
+
+<Tooltip
+  formatter={(value, name) => [
+    `${((value / totalDownloads) * 100).toFixed(1)}%`, // Convert value to percentage
+    name, // Show OS name instead of "Downloads"
+  ]}
+/>
+
             </PieChart>
           </ResponsiveContainer>
         </div>
@@ -484,18 +482,19 @@ const [currentBarData, setCurrentBarData] = useState(barDataByYear["2023"]);
         </div>
 
         <ResponsiveContainer width="100%" height={300}>
-          <BarChart data={currentBarData}>
-
+          <BarChart data={currentBarData} barSize={30}> 
             <CartesianGrid strokeDasharray="3 3" vertical={false} />
             <XAxis dataKey="month" />
             <YAxis />
-            <Tooltip content={({ payload }) =>
-              payload && hoverBar ? (
-                <div className="custom-tooltip">
-                  <p>{hoverBar}: {payload[0]?.payload[hoverBar]}</p>
-                </div>
-              ) : null
-            } />
+            <Tooltip 
+              content={({ payload }) =>
+                payload && hoverBar ? (
+                  <div className="custom-tooltip">
+                    <p>{hoverBar}: {payload[0]?.payload[hoverBar]}</p>
+                  </div>
+                ) : null
+              } 
+            />
             <Legend />
             {Object.keys(barColors).map((key, index, keys) => (
               <Bar
@@ -510,6 +509,8 @@ const [currentBarData, setCurrentBarData] = useState(barDataByYear["2023"]);
             ))}
           </BarChart>
         </ResponsiveContainer>
+
+
       </div>
     </div>
   );

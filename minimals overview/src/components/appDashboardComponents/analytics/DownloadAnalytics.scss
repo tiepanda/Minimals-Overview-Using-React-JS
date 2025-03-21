@@ -65,7 +65,7 @@
   
   /* Tooltip Styling */
   .custom-tooltip {
-    background: rgba(209, 208, 208, 0.7);
+    background: rgba(255, 255, 255, 0.7);
     color: rgb(6, 6, 6);
     padding: 6px 10px;
     border-radius: 5px;
@@ -253,9 +253,9 @@
   }
   
   .custom-tooltip {
-    background: #fff;
+    // background: #fff;
     padding: 10px;
-    border: 1px solid #ccc;
+    // border: 1px solid #ccc;
     border-radius: 5px;
     font-size: 14px;
   }
@@ -693,3 +693,6 @@ html, body {
     }
   }
 }
+
+
+
