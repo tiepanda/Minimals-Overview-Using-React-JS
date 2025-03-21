@@ -10,7 +10,7 @@
     background: white;
     border-radius: 8px;
     padding: 20px;
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    // box-shadow: 8px 19px 16px rgba(0, 0, 0, 0.1);
     text-align: center;
     transition: transform 0.3s ease;
   
@@ -99,7 +99,7 @@
       background: #fff;
       padding: 20px;
       border-radius: 12px;
-      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+      box-shadow: 4px 5px 8px rgba(0, 0, 0, 0.1);
     }
   
     .small-chart {
@@ -121,7 +121,7 @@
     background: white;
     padding: 20px;
     border-radius: 10px;
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    // box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
   }
   
   .small-chart {
@@ -178,12 +178,12 @@
     background: #ffffff;
     border-radius: 10px;
     padding: 20px;
-    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    // box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
     transition: none; // Disable any hover transition that may cause movement
   
     &:hover {
       transform: none !important; // Prevent scaling or shifting
-      box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); // Keep the same shadow on hover
+      // box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); // Keep the same shadow on hover
     }
   }
 
@@ -241,7 +241,7 @@
     background: #fff;
     padding: 20px;
     border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    // box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   }
   
   .small-chart {
@@ -291,7 +291,7 @@
     background: #fff;
     padding: 20px;
     border-radius: 10px;
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    // box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
   }
 
   .small-chart {
@@ -324,7 +324,7 @@
     background: #fff;
     padding: 20px;
     border-radius: 10px;
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    // box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
   }
 
   .small-chart {
@@ -355,7 +355,7 @@
     background: #fff;
     padding: 20px;
     border-radius: 10px;
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    // box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
   }
 
   .small-chart {
@@ -417,7 +417,7 @@
     background: #fff;
     padding: 20px;
     border-radius: 10px;
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    // box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
     min-height: 350px;
   }
 
@@ -563,7 +563,7 @@ html, body {
   padding: 16px;
   background: white;
   border-radius: 8px;
-  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  // box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
 }
 
 .custom-dropdown {
