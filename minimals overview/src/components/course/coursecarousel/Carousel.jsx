@@ -130,6 +130,29 @@ function Carousel() {
     setIsDragging(false);
   };
 
+  // Touch dragging state
+  const handleTouchStart = (e) => {
+    setIsDragging(true);
+    setStartX(e.touches[0].pageX - sliderRef.current.offsetLeft);
+    setScrollLeft(startIndex);
+  };
+  
+  const handleTouchMove = (e) => {
+    if (!isDragging) return;
+    const x = e.touches[0].pageX - sliderRef.current.offsetLeft;
+    const walk = (x - startX) / 200; // Adjust sensitivity
+    let newIndex = scrollLeft - walk;
+    
+    if (newIndex < 0) newIndex = 0;
+    if (newIndex > totalSlides - visibleSlides) newIndex = totalSlides - visibleSlides;
+  
+    setStartIndex(Math.round(newIndex));
+  };
+  
+  const handleTouchEnd = () => {
+    setIsDragging(false);
+  };
+
   return (
     <div>
       <div className="container-fluid mt-5 p-4">
@@ -155,6 +178,9 @@ function Carousel() {
                 onMouseUp={handleMouseUp}
                 onMouseMove={handleMouseMove}
                 onMouseLeave={handleMouseUp}
+                onTouchStart={handleTouchStart}
+                onTouchMove={handleTouchMove}
+                onTouchEnd={handleTouchEnd}
                 >
                 <div className="slide-container">
                   <div className="slide-carousel" style={{ transform: `translateX(-${startIndex * (100 / visibleSlides)}%)` }}>
