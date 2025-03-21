@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import { Offcanvas, Button } from "react-bootstrap";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./ProfileMenu.scss";
- 
+
 const ProfileMenu = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [hoveredAvatar, setHoveredAvatar] = useState(null);
@@ -12,7 +12,7 @@ const ProfileMenu = () => {
     { id: 2, name: "Keerthana", image: "https://assets.minimals.cc/public/assets/images/mock/avatar/avatar-3.webp" },
     { id: 3, name: "Sneha", image: "https://assets.minimals.cc/public/assets/images/mock/avatar/avatar-4.webp" },
   ];
- 
+
   // Close sidebar when Escape key is pressed
   useEffect(() => {
     const handleKeyDown = (event) => {
@@ -23,6 +23,7 @@ const ProfileMenu = () => {
     document.addEventListener("keydown", handleKeyDown);
     return () => document.removeEventListener("keydown", handleKeyDown);
   }, []);
+
  
   const handleClose = () => setIsOpen(false);
   const handleShow = () => setIsOpen(true);
@@ -47,10 +48,12 @@ const ProfileMenu = () => {
       <Offcanvas
         show={isOpen}
         onHide={handleClose}
+
         placement="end"
         className="profile-offcanvas"
       >
         <Offcanvas.Header className="border-0">
+
           <button
             type="button"
             className="btn-close"
@@ -59,20 +62,23 @@ const ProfileMenu = () => {
           ></button>
         </Offcanvas.Header>
        
+
         <Offcanvas.Body className="d-flex flex-column px-4 pt-0">
           {/* Profile Header */}
           <div className="profile-header text-center mb-4">
             <div className="position-relative mx-auto mb-3">
+
               <div className="avatar-ring-green"></div>
               <img
                 src="https://assets.minimals.cc/public/assets/images/mock/avatar/avatar-25.webp"
                 alt="User"
                 className="user-avatar"
+
               />
             </div>
             <h3 className="fw-semibold mb-1">Jaydon Frankie</h3>
             <p className="text-muted small mb-4">demo@minimals.cc</p>
- 
+
             {/* Avatar Group */}
             <div className="avatar-group d-flex justify-content-center align-items-center">
               {avatars.map((avatar) => (
@@ -88,7 +94,7 @@ const ProfileMenu = () => {
                   )}
                 </div>
               ))}
- 
+
               {/* Add Avatar Button */}
               <div className="add-avatar-wrapper position-relative mx-1">
                 <button
@@ -100,7 +106,7 @@ const ProfileMenu = () => {
               </div>
             </div>
           </div>
- 
+
           {/* Menu Items */}
           <nav className="flex-grow-1">
             <ul className="menu-list list-unstyled">
@@ -158,20 +164,22 @@ const ProfileMenu = () => {
                 <span className="menu-text">Account settings</span>
               </li>
             </ul>
-           
+
             {/* Promo Card */}
             <div className="promo-card mt-4">
               <h3 className="promo-title">35% OFF</h3>
               <p className="promo-text">Power up Productivity!</p>
               <button className="upgrade-btn">Upgrade to Pro</button>
+
               <img
                 src="https://assets.minimals.cc/public/assets/illustrations/illustration-rocket-small.webp"
                 alt="Rocket"
+
                 className="promo-img"
               />
             </div>
           </nav>
- 
+
           {/* Logout Button */}
           <div className="mt-4 mb-3">
             <button className="logout-btn">

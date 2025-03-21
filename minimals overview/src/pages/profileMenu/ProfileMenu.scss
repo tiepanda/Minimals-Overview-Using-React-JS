@@ -1,17 +1,17 @@
 // ProfileMenu.scss
- 
+
 // Main container
 .profile-container {
   position: relative;
 }
- 
+
 // Profile button
 .profile-btn {
   padding: 0;
   background: transparent;
   border: none;
   cursor: pointer;
- 
+
   .profile-img {
     width: 40px;
     height: 40px;
@@ -19,16 +19,18 @@
     object-fit: cover;
   }
 }
- 
+
 // Custom Offcanvas styling
 .profile-offcanvas {
   max-width: 320px;
   border: none;
+
  
   .offcanvas-header {
     padding-top: 16px;
     padding-bottom: 0;
    
+
     .btn-close {
       color: #666;
       opacity: 0.8;
@@ -40,7 +42,7 @@
     }
   }
 }
- 
+
 // Profile header section
 .profile-header {
   .avatar-ring-green {
@@ -53,7 +55,7 @@
     left: 50%;
     transform: translateX(-50%);
     z-index: 0;
-   
+
     &::after {
       content: '';
       position: absolute;
@@ -66,7 +68,7 @@
       border: 2px solid white;
     }
   }
- 
+
   .user-avatar {
     width: 80px;
     height: 80px;
@@ -75,31 +77,33 @@
     position: relative;
     z-index: 1;
   }
- 
+
   h3 {
     font-size: 1.1rem;
     margin-top: 16px;
     margin-bottom: 4px;
     font-weight: 600;
   }
- 
+
   p {
     color: #666;
     font-size: 0.9rem;
     margin-bottom: 20px;
   }
 }
- 
+
 // Avatar group
 .avatar-group {
   display: flex;
   justify-content: center;
   margin-bottom: 24px;
+
  
   .avatar-wrapper {
     position: relative;
     margin: 0 4px;
    
+
     .avatar {
       width: 36px;
       height: 36px;
@@ -108,7 +112,6 @@
       border: 2px solid white;
       cursor: pointer;
     }
-   
     .tooltip {
       position: absolute;
       bottom: 100%;
@@ -123,7 +126,7 @@
       margin-bottom: 8px;
       display: none;
       z-index: 10;
-     
+
       &::after {
         content: '';
         position: absolute;
@@ -135,7 +138,6 @@
         border-color: rgba(0, 0, 0, 0.8) transparent transparent transparent;
       }
     }
-   
     &:hover .tooltip {
       display: block;
     }
@@ -160,16 +162,15 @@
       font-weight: 300;
       line-height: 1;
       transition: background-color 0.2s;
+
      
       &:hover {
         background-color: #eeeeee;
       }
-     
       &:active {
         transform: scale(0.95);
       }
     }
-   
     .tooltip {
       position: absolute;
       bottom: 100%;
@@ -184,7 +185,7 @@
       margin-bottom: 8px;
       display: none;
       z-index: 10;
-     
+
       &::after {
         content: '';
         position: absolute;
@@ -196,18 +197,18 @@
         border-color: rgba(0, 0, 0, 0.8) transparent transparent transparent;
       }
     }
-   
+
     &:hover .tooltip {
       display: block;
     }
   }
 }
- 
+
 // Menu styling
 .menu-list {
   margin: 0;
   padding: 0;
- 
+
   .menu-item {
     display: flex;
     align-items: center;
@@ -217,11 +218,13 @@
     cursor: pointer;
     transition: color 0.2s;
     position: relative;
+
    
     &:hover {
       color: #212B36;
     }
    
+
     .menu-icon {
       display: flex;
       align-items: center;
@@ -232,13 +235,13 @@
       color: inherit;
       opacity: 0.8;
     }
-   
+
     .menu-text {
       font-size: 0.95rem;
       font-weight: 500;
       flex: 1;
     }
-   
+
     .badge-count {
       display: flex;
       align-items: center;
@@ -253,7 +256,7 @@
     }
   }
 }
- 
+
 // Promo card
 .promo-card {
   background: linear-gradient(135deg, #FF9F98 0%, #A155DB 100%);
@@ -264,19 +267,19 @@
   color: white;
   text-align: left;
   margin-top: 30px;
- 
+
   .promo-title {
     font-size: 1.25rem;
     font-weight: 700;
     margin-bottom: 4px;
   }
- 
+
   .promo-text {
     font-size: 0.9rem;
     margin-bottom: 16px;
     opacity: 0.9;
   }
- 
+
   .upgrade-btn {
     background-color: #FFAB00;
     color: #212B36;
@@ -287,12 +290,12 @@
     font-size: 0.9rem;
     cursor: pointer;
     transition: background-color 0.2s;
-   
+
     &:hover {
       background-color: #F59E0B;
     }
   }
- 
+
   .promo-img {
     position: absolute;
     bottom: 0;
@@ -302,7 +305,7 @@
     animation: moveUpDown 2s infinite ease-in-out;
   }
 }
- 
+
 // Logout button
 .logout-btn {
   width: 100%;
@@ -315,12 +318,12 @@
   font-size: 0.95rem;
   cursor: pointer;
   transition: background-color 0.2s;
- 
+
   &:hover {
     background-color: #FFE7E6;
   }
 }
- 
+
 @keyframes moveUpDown {
   0% {
     transform: translateY(0);
@@ -332,5 +335,4 @@
     transform: translateY(0);
   }
 }
- 
- 
+

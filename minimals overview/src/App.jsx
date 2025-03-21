@@ -1,7 +1,11 @@
+
+
 import React, { useState } from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./App.css";
+
 import AppDashboard from "./pages/AppDashboard";
+
 import Sidebar from "./pages/Sidebar/Sidebar";
 import Navbar from "./components/BookingComp/Navbar";
 import BookingDashboard from "./pages/BookingDashboard";
@@ -19,6 +23,7 @@ function App() {
 
   return (
     <>
+
       <div className="app-container">
         <Sidebar onToggle={handleSidebarToggle} />
         <div
@@ -36,6 +41,7 @@ function App() {
       </div>
     </>
   );
+
 }
 
 export default App;
