@@ -22,8 +22,12 @@ function App() {
         className={`main-content ${
           sidebarExpanded ? "sidebar-expanded" : "sidebar-collapsed"
         }`}
+<<<<<<< HEAD
         >
         {/* <Navbar /> */}
+=======
+      >
+>>>>>>> e3faa2e948a332bf46946ceeea2f7af922e05ab3
         <BookingDashboard />
         <AppDashboard/>
       </div>

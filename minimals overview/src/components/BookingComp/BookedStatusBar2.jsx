@@ -83,9 +83,9 @@ const CircularProgressBar = ({ percentage, color, size = 80 }) => {
 
 const BookedStatusBar2 = ({ bookedStatusCircular }) => {
   return (
-    <div className="row g-3 justify-content-center">
+    <div className="row g-3 justify-content-center ">
       {bookedStatusCircular.map((item, index) => (
-        <div key={index} className="col-6">
+        <div key={index} className="col col-lg-6 col-md-6 col-sm-12">
           <div className="d-flex align-items-center justify-content-center">
             <CircularProgressBar
               percentage={item.percentage}

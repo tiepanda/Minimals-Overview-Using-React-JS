@@ -1,4 +1,6 @@
 import React, { useState, useRef, useEffect } from "react";
+import "./NewestBooking.css"; // Importing the new CSS file for styles
+
 import { useSwipeable } from "react-swipeable";
 import { motion, AnimatePresence } from "framer-motion";
 
@@ -72,20 +74,8 @@ const NewestBooking = ({ bookings, onFilterChange }) => {
   });
 
   return (
-    <div className=" p-0">
-      <div
-        className="flex justify-between items-center mb-3 px-4 pt-4"
-        style={{
-          display: "flex",
-          WebkitBoxAlign: "center",
-          alignItems: "center",
-          padding: "calc(0* var(--spacing))",
-          marginBottom: "calc(3* var(--spacing))",
-          FixationEdgeOpacity: "80%",
-          BrLineHeight: "1",
-          brBoldness: "600",
-        }}
-      >
+    <div className="booking-container">
+      <div className="booking-header">
         <div className="flex flex-col col-8">
           <h1 className=" " style={{ fontSize: 19 }}>
             Newest booking
@@ -110,19 +100,19 @@ const NewestBooking = ({ bookings, onFilterChange }) => {
           </select>
         </div>
 
-        <div className="ps-4 col-1">
+        <div className="ps-2 col-1">
           <button
             onClick={prevSlide}
-            variant="light"
+            variant="transperent"
             size="sm"
             aria-label="Previous booking"
             disabled={currentIndex === 0}
-            className={`btn-lg p-1 bg-white ${
+            className={`  ${
               currentIndex === 0
                 ? "text-gray-300"
                 : "text-gray-600 hover:bg-gray-100"
             }`}
-            style={{ border: "none" }}
+            style={{ border: "none", backgroundColor: "#ffffff00" }}
           >
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -139,12 +129,12 @@ const NewestBooking = ({ bookings, onFilterChange }) => {
           <button
             onClick={nextSlide}
             disabled={currentIndex >= bookings.length - visibleItems}
-            className={`p-1 bg-white ${
+            className={`  ${
               currentIndex >= bookings.length - visibleItems
                 ? "text-gray"
                 : "text-black onClick:bg-gray-100"
             }`}
-            style={{ border: "none" }}
+            style={{ border: "none", backgroundColor: "#ffffff00" }}
           >
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -192,28 +182,11 @@ const NewestBooking = ({ bookings, onFilterChange }) => {
               {bookings.map((booking, index) => (
                 <motion.div
                   key={index}
-                  className="flex-shrink-0"
+                  className="booking-card"
                   whileHover={{ scale: 1.02 }}
                   transition={{ type: "spring", stiffness: 400, damping: 17 }}
-                  style={{
-                    flex: "0 0 25%",
-                    display: "block",
-                    position: "relative",
-                    minWidth: "0px",
-                    paddingLeft: "24px",
-                  }}
                 >
-                  <div
-                    className="overflow-hidden h-full"
-                    style={{
-                      width: "100%",
-                      borderRadius: "20px",
-                      position: "relative",
-                      backgroundColor: "#f4f6f8",
-                      border: "none",
-                      zIndex: 99,
-                    }}
-                  >
+                  <div className="overflow-hidden h-full">
                     {/* User info */}
                     <div className="p-3">
                       <div
