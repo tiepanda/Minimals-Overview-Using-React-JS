@@ -1,4 +1,6 @@
 import React, { useState } from "react";
+import { Link } from "react-router-dom";
+
 import "./Sidebar.css";
 
 // Import data from dashboardData.js
@@ -105,7 +107,7 @@ const Sidebar = ({ onToggle }) => {
                   item.disabled ? "disabled" : ""
                 }`}
               >
-                <div className="menu-item-content">
+                <Link to={item.path} className="menu-item-content">
                   <span className="icon">
                     <img
                       src={item.icon}
@@ -132,7 +134,7 @@ const Sidebar = ({ onToggle }) => {
                       )}
                     </div>
                   )}
-                </div>
+                </Link>
                 {isExpanded && item.hasChildren && (
                   <span className="chevron">›</span>
                 )}
