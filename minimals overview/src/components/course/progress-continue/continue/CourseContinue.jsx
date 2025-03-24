@@ -63,7 +63,7 @@ function CourseContinue() {
                                     style={{ transform: `translateX(${item.continuePercentage - 100}%)` }}
                                     ></span>
                                 </span>
-                                <span className='percentage'>{item.continuePercentage}%</span>
+                                <span className='continue-percentage'>{item.continuePercentage}%</span>
                             </div>
                         </div>
                     </div>

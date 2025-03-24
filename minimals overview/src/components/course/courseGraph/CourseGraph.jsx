@@ -88,9 +88,12 @@ function CourseGraph() {
                     {timeFrame}
                     <svg
                       style={{
-                        marginLeft: "0.5rem",
-                        width: "1rem",
-                        height: "1rem",
+                        // marginLeft: "0.5rem",
+                        // width: "1rem",
+                        // height: "1rem",
+                        marginLeft: "8px",
+                        width: "16px",
+                        height: "16px",
                         color: "#9CA3AF",
                       }}
                       fill="none"
@@ -111,9 +114,11 @@ function CourseGraph() {
                       <div
                         onClick={() => selectTimeFrame("Weekly")}
                         style={{
-                          padding: "0.5rem 1rem",
+                          // padding: "0.5rem 1rem",
+                          padding: "8px 16px",
                           cursor: "pointer",
-                          fontSize: "0.875rem",
+                          // fontSize: "0.875rem",
+                          fontSize: "14px",
                           color: timeFrame === "Weekly" ? "#4B5563" : "#6B7280",
                           fontWeight: timeFrame === "Weekly" ? 500 : 400,
                           backgroundColor:
@@ -125,9 +130,11 @@ function CourseGraph() {
                       <div
                         onClick={() => selectTimeFrame("Monthly")}
                         style={{
-                          padding: "0.5rem 1rem",
+                          // padding: "0.5rem 1rem",
+                          padding: "8px 16px",
                           cursor: "pointer",
-                          fontSize: "0.875rem",
+                          // fontSize: "0.875rem",
+                          fontSize: "14px",
                           color:
                             timeFrame === "Monthly" ? "#4B5563" : "#6B7280",
                           fontWeight: timeFrame === "Monthly" ? 500 : 400,
@@ -140,9 +147,11 @@ function CourseGraph() {
                       <div
                         onClick={() => selectTimeFrame("Yearly")}
                         style={{
-                          padding: "0.5rem 1rem",
+                          // padding: "0.5rem 1rem",
+                          padding: "8px 16px",
                           cursor: "pointer",
-                          fontSize: "0.875rem",
+                          // fontSize: "0.875rem",
+                          fontSize: "14px",
                           color: timeFrame === "Yearly" ? "#4B5563" : "#6B7280",
                           fontWeight: timeFrame === "Yearly" ? 500 : 400,
                           backgroundColor:
@@ -184,7 +193,8 @@ function CourseGraph() {
                     />
                     <Tooltip
                       contentStyle={{
-                        borderRadius: "0.375rem",
+                        // borderRadius: "0.375rem",
+                        borderRadius: "6px",
                         border: "1px solid #E5E7EB",
                         boxShadow: "0 4px 6px -1px rgba(0, 0, 0, 0.1)",
                       }}

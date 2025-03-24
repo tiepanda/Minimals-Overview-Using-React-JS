@@ -31,7 +31,7 @@ function Course() {
           </div>
 
           {/* Right Content */}
-          <div className="col-12 col-lg-3 col-sm-12" style={{ background: "#F6F4F8" }}>
+          <div className="col-12 col-lg-3 col-sm-12" style={{ background: "#F4F6F8" }}>
             <CourseProfile />
 
             <Strength />

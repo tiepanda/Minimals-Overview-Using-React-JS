@@ -3,7 +3,8 @@
 }
 
 .Chart-Title {
-    font-size: 1.0625rem;
+    /* font-size: 1.0625rem; */
+    font-size: 17px;
     line-height: 1.55556;
     font-weight: 600;
     padding-left: 19px;

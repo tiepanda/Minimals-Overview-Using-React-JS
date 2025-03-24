@@ -25,7 +25,8 @@
   margin: 0;
   font-weight: 600;
   line-height: 1.55556;
-  font-size: 1.125rem;
+  /* font-size: 1.125rem; */
+  font-size: 18px;
 }
 
 /* -------------------------------- */
@@ -88,7 +89,8 @@
   display: inline-flex;
   -webkit-box-pack: start;
   justify-content: flex-start;
-  font-size: 0.8125rem;
+  /* font-size: 0.8125rem; */
+  font-size: 13px;
   font-weight: 500;
 }
 
@@ -109,7 +111,8 @@
 
 .course-uList-title {
   font-weight: 600;
-  font-size: 0.8125rem;
+  /* font-size: 0.8125rem; */
+  font-size: 13px;
 }
 
 .color-gray {
