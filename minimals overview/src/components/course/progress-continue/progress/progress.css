@@ -107,6 +107,11 @@
   margin-left: 10px;
 }
 
+.course-uList-title {
+  font-weight: 600;
+  font-size: 0.8125rem;
+}
+
 .color-gray {
   background: #e6e9ed;
 }

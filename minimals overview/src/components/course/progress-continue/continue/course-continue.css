@@ -89,6 +89,11 @@
   font-size: 0.875rem;
 }
 
+.data-title:hover {
+  text-decoration: underline;
+  color: inherit;
+}
+
 .data-subtitle {
   color: #637381;
   font-weight: 400;
