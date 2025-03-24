@@ -9,7 +9,8 @@
 }
 
 .sliding-Heading {
-  font-size: 1.125rem;
+  /* font-size: 1.125rem; */
+  font-size: 18px;
   margin: 0px;
   font-weight: 600;
   line-height: 1.55556;
@@ -105,7 +106,8 @@
   display: flex;
   flex-wrap: wrap;
   font-weight: 400;
-  font-size: 0.75rem;
+  /* font-size: 0.75rem; */
+  font-size: 12px;
   line-height: 2;
   color: #1C252E;
 }
@@ -145,7 +147,8 @@
   text-overflow: ellipsis;
   -webkit-box-orient: vertical;
   height: 44px;
-  font-size: 0.875rem;
+  /* font-size: 0.875rem; */
+  font-size: 14px;
 }
 
 .sList-price-container {
@@ -159,12 +162,14 @@
 .sList-price {
   font-weight: 600;
   line-height: 1.55556;
-  font-size: 1.125rem;
+  /* font-size: 1.125rem; */
+  font-size: 18px;
 }
 
 .sList-year {
   font-weight: 400;
-  font-size: 0.875rem;
+  /* font-size: 0.875rem; */
+  font-size: 14px;
   line-height: 1.57143;
   -webkit-box-flex: 1;
   flex-grow: 1;
@@ -186,7 +191,8 @@
   line-height: 1.71429;
   text-transform: unset;
   min-width: 64px;
-  font-size: 0.8125rem;
+  /* font-size: 0.8125rem; */
+  font-size: 13px;
   box-shadow: none;
   color: #ffffff;
   background-color: #1c252e;

@@ -93,7 +93,7 @@ function Progress() {
                           <circle cx={center} cy={center} r={radius - strokeWidth} fill="white" />
 
                           {/* Centered text */}
-                          <text x="50" y="45" textAnchor="middle" fontSize="8" fontWeight={500} fill={`${hovered ? hovered.color : `#000`}`}>
+                          <text x="50" y="45" textAnchor="middle" fontSize="6" fontWeight={500} fill={`${hovered ? hovered.color : `#000`}`}>
                             {hovered ? hovered.name : "Total"}
                           </text>
                           <text x="50" y="60" textAnchor="middle" fontSize="9" fontWeight="bold" fill="#000">

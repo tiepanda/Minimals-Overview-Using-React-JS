@@ -43,7 +43,7 @@ function Strength() {
     <div>
         <div className="mt-5 p-3">
 
-            <div className="chart-main-container" style={{ width: "100%", height: 300, fontSize: "0.9rem" }}>
+            <div className="chart-main-container" style={{ width: "100%", height: 300, fontSize: "14.4px" }}>
                 <h3 className="Chart-Title">Strength</h3>
 
                 <div className="strength-chart">
