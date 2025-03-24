@@ -126,7 +126,7 @@ function Progress() {
                                 <div className='uolist-data'>
                                     {/* <span className='list-color'></span> */}
                                     <span className={`list-color ${listColor[l % listColor.length]}`}></span>
-                                    <span>{list.liTitle}</span>
+                                    <span className="course-uList-title">{list.liTitle}</span>
                                 </div>
                                 <span></span>
                             </div>

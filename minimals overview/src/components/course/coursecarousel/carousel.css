@@ -104,13 +104,34 @@
   margin-bottom: 12px;
   display: flex;
   flex-wrap: wrap;
-}
-
-.sList-timing .sList-contact {
   font-weight: 400;
   font-size: 0.75rem;
-  line-height: 1.5;
-  color: #637381;
+  line-height: 2;
+  color: #1C252E;
+}
+
+.sList-timing {
+  height: 24px;
+  min-width: 24px;
+  cursor: default;
+  align-items: center;
+  justify-content: center;
+  background-color: #d7dbde;
+  border-radius: 6px;
+  gap: 6px;
+  padding: 0px 6px;
+}
+
+.sList-contact {
+  height: 24px;
+  min-width: 24px;
+  cursor: default;
+  align-items: center;
+  justify-content: center;
+  background-color: #d7dbde;
+  border-radius: 6px;
+  gap: 6px;
+  padding: 0px 6px; 
 }
 
 .sList-Heading {
@@ -124,6 +145,7 @@
   text-overflow: ellipsis;
   -webkit-box-orient: vertical;
   height: 44px;
+  font-size: 0.875rem;
 }
 
 .sList-price-container {

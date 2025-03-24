@@ -50,6 +50,11 @@
   color: #1c252e;
 }
 
+.object-title:hover {
+  text-decoration: underline;
+  color: #1c252e;
+}
+
 .object-date {
   gap: 4px;
   display: flex;
