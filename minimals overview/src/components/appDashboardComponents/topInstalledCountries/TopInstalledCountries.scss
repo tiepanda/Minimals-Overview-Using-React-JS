@@ -1,210 +1,496 @@
 
-.dashboard-container {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
-  }
+// .dashboard-container {
+//     display: flex;
+//     flex-wrap: wrap;
+//     gap: 20px;
+//   }
 
   
-  .dashboard-card {
-    padding: 20px;
-    border-radius: 10px;
-    background: #fff;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-    width: 100%;
-    max-width: 400px;
-  }
+//   .dashboard-card {
+//     padding: 20px;
+//     border-radius: 10px;
+//     background: #fff;
+//     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+//     width: 100%;
+//     max-width: 400px;
+//   }
   
-  .country-row,
+//   .country-row,
+//   .author-row {
+//     display: flex;
+//     justify-content: space-between;
+//     align-items: center;
+//     margin-top: 10px;
+//   }
+  
+//   .author-img {
+//     width: 40px;
+//     height: 40px;
+//     border-radius: 50%;
+//   }
+  
+//   .author-likes {
+//     display: flex;
+//     align-items: center;
+//     gap: 5px;
+//   }
+  
+//   .stats-card {
+//     display: flex;
+//     align-items: center;
+//     justify-content: space-between;
+//     padding: 15px;
+//     border-radius: 15px;
+//     color: white;
+//     position: relative;
+//     overflow: hidden;
+//     width: 100%;
+//     max-width: 400px;
+//     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+//   }
+  
+//   .progress-circle {
+//     width: 60px;
+//     height: 60px;
+//     position: relative;
+  
+//     svg {
+//       width: 100%;
+//       height: 100%;
+//       transform: rotate(-90deg);
+  
+//       .circle-bg {
+//         fill: none;
+//         stroke: rgba(255, 255, 255, 0.2);
+//         stroke-width: 3.8;
+//       }
+  
+//       .circle-progress {
+//         fill: none;
+//         stroke: white;
+//         stroke-width: 3.8;
+//         stroke-linecap: round;
+//         transition: stroke-dasharray 1s ease-in-out;
+//       }
+//     }
+  
+//     .percentage {
+//       position: absolute;
+//       top: 50%;
+//       left: 50%;
+//       transform: translate(-50%, -50%);
+//       font-weight: bold;
+//       font-size: 14px;
+//     }
+//   }
+  
+//   .stats-info {
+//     text-align: left;
+  
+//     h2 {
+//       font-size: 22px;
+//       margin: 0;
+//     }
+  
+//     p {
+//       font-size: 14px;
+//       margin: 0;
+//       opacity: 0.8;
+//     }
+//   }
+
+//   .flag-icon {
+//     width: 24px;
+//     height: 16px;
+//     margin-right: 8px;
+//     border-radius: 4px; // Adjust this value for more or less rounding
+//     object-fit: cover; // Ensures proper scaling
+//   }
+  
+
+//   .flag-icon {
+//     border-radius: 5px;
+//   }
+  
+//   .countries {
+//     color: #666;
+//     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    
+//     h3 {
+//       color: #444;
+//       font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+//     }
+  
+//     .country-row {
+//       display: flex;
+//       align-items: center;
+//       justify-content: space-between;
+//       padding: 8px 0;
+//       color: inherit; // Inherits light black color from .countries
+  
+//       span {
+//         display: flex;
+//         align-items: center;
+//         gap: 5px; // Adds spacing between icons and text
+//       }
+  
+//       svg {
+//         color: inherit; // Ensures icons match the text color
+//       }
+//     }
+//   }
+  
+//   .authors {
+//     .author-row {
+//       display: flex;
+//       align-items: center;
+//       gap: 12px;
+//       padding: 10px 0;
+  
+//       .author-img {
+//         width: 40px;
+//         height: 40px;
+//         border-radius: 50%;
+//       }
+  
+//       .author-details {
+//         display: flex;
+//         flex-direction: column;
+//         font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+//       }
+  
+//       .author-name {
+//         font-weight: bold;
+//         font-size: 14px;
+//       }
+  
+//       .author-likes {
+//         display: flex;
+//         align-items: center;
+//         gap: 5px;
+//         font-size: 12px;
+//         color: #646363; // Heart icon color
+//       }
+  
+//       .trophy-icon {
+//         margin-left: auto;
+//         font-size: 18px;
+//       }
+//     }
+//   }
+  
+//   .stats {
+//     display: flex;
+//     flex-direction: column;
+//     gap: 20px; 
+//   }
+  
+//   .stats-card {
+//     display: flex;
+//     align-items: center;
+//     justify-content: flex-start; // Aligns content to the left
+//     padding: 20px;
+//     border-radius: 10px;
+//     color: rgb(255, 255, 255);
+//     text-align: left;
+  
+//     .progress-circle {
+//       margin-right: 25px; // Adds spacing between the percentage and the text
+//     }
+  
+//     .percentage {
+//       font-size: 14px;
+//       font-weight: bold;
+//     }
+  
+//     .stats-info {
+//       flex: 1;
+//     }
+//   }
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.dashboard-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+
+.dashboard-card {
+  padding: 20px;
+  border-radius: 10px;
+  background: #fff;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 400px;
+}
+
+.country-row,
+.author-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.author-img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+
+.author-likes {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.stats-card {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px;
+  border-radius: 15px;
+  color: white;
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  max-width: 400px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.progress-circle {
+  width: 60px;
+  height: 60px;
+  position: relative;
+
+  svg {
+    width: 100%;
+    height: 100%;
+    transform: rotate(-90deg);
+
+    .circle-bg {
+      fill: none;
+      stroke: rgba(255, 255, 255, 0.2);
+      stroke-width: 3.8;
+    }
+
+    .circle-progress {
+      fill: none;
+      stroke: white;
+      stroke-width: 3.8;
+      stroke-linecap: round;
+      transition: stroke-dasharray 1s ease-in-out;
+    }
+  }
+
+  .percentage {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-weight: bold;
+    font-size: 14px;
+  }
+}
+
+.stats-info {
+  text-align: left;
+
+  h2 {
+    font-size: 22px;
+    margin: 0;
+  }
+
+  p {
+    font-size: 14px;
+    margin: 0;
+    opacity: 0.8;
+  }
+}
+
+.flag-icon {
+  width: 24px;
+  height: 16px;
+  margin-right: 8px;
+  border-radius: 4px; // Adjust this value for more or less rounding
+  object-fit: cover; // Ensures proper scaling
+}
+
+
+.flag-icon {
+  border-radius: 5px;
+}
+
+.countries {
+  color: #666;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  
+  h3 {
+    color: #444;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  }
+
+  .country-row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 8px 0;
+    color: inherit; // Inherits light black color from .countries
+
+    span {
+      display: flex;
+      align-items: center;
+      gap: 5px; // Adds spacing between icons and text
+    }
+
+    svg {
+      color: inherit; // Ensures icons match the text color
+    }
+  }
+}
+
+.authors {
   .author-row {
     display: flex;
-    justify-content: space-between;
     align-items: center;
-    margin-top: 10px;
-  }
-  
-  .author-img {
-    width: 40px;
-    height: 40px;
-    border-radius: 50%;
-  }
-  
-  .author-likes {
-    display: flex;
-    align-items: center;
-    gap: 5px;
-  }
-  
-  .stats-card {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 15px;
-    border-radius: 15px;
-    color: white;
-    position: relative;
-    overflow: hidden;
-    width: 100%;
-    max-width: 400px;
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
-  }
-  
-  .progress-circle {
-    width: 60px;
-    height: 60px;
-    position: relative;
-  
-    svg {
-      width: 100%;
-      height: 100%;
-      transform: rotate(-90deg);
-  
-      .circle-bg {
-        fill: none;
-        stroke: rgba(255, 255, 255, 0.2);
-        stroke-width: 3.8;
-      }
-  
-      .circle-progress {
-        fill: none;
-        stroke: white;
-        stroke-width: 3.8;
-        stroke-linecap: round;
-        transition: stroke-dasharray 1s ease-in-out;
-      }
-    }
-  
-    .percentage {
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-      font-weight: bold;
-      font-size: 14px;
-    }
-  }
-  
-  .stats-info {
-    text-align: left;
-  
-    h2 {
-      font-size: 22px;
-      margin: 0;
-    }
-  
-    p {
-      font-size: 14px;
-      margin: 0;
-      opacity: 0.8;
-    }
-  }
+    gap: 12px;
+    padding: 10px 0;
 
-  .flag-icon {
-    width: 24px;
-    height: 16px;
-    margin-right: 8px;
-    border-radius: 4px; // Adjust this value for more or less rounding
-    object-fit: cover; // Ensures proper scaling
-  }
-  
+    .author-img {
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+    }
 
-  .flag-icon {
-    border-radius: 5px;
-  }
-  
-  .countries {
-    color: #666;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    
-    h3 {
-      color: #444;
+    .author-details {
+      display: flex;
+      flex-direction: column;
       font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     }
-  
-    .country-row {
+
+    .author-name {
+      font-weight: bold;
+      font-size: 14px;
+    }
+
+    .author-likes {
       display: flex;
       align-items: center;
-      justify-content: space-between;
-      padding: 8px 0;
-      color: inherit; // Inherits light black color from .countries
-  
-      span {
-        display: flex;
-        align-items: center;
-        gap: 5px; // Adds spacing between icons and text
-      }
-  
-      svg {
-        color: inherit; // Ensures icons match the text color
-      }
+      gap: 5px;
+      font-size: 12px;
+      color: #646363; // Heart icon color
+    }
+
+    .trophy-icon {
+      margin-left: auto;
+      font-size: 18px;
     }
   }
-  
-  .authors {
-    .author-row {
-      display: flex;
-      align-items: center;
-      gap: 12px;
-      padding: 10px 0;
-  
-      .author-img {
-        width: 40px;
-        height: 40px;
-        border-radius: 50%;
-      }
-  
-      .author-details {
-        display: flex;
-        flex-direction: column;
-        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-      }
-  
-      .author-name {
-        font-weight: bold;
-        font-size: 14px;
-      }
-  
-      .author-likes {
-        display: flex;
-        align-items: center;
-        gap: 5px;
-        font-size: 12px;
-        color: #646363; // Heart icon color
-      }
-  
-      .trophy-icon {
-        margin-left: auto;
-        font-size: 18px;
-      }
-    }
+}
+
+.stats {
+  display: flex;
+  flex-direction: column;
+  gap: 20px; 
+}
+
+.stats-card {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start; // Aligns content to the left
+  padding: 20px;
+  border-radius: 10px;
+  color: rgb(255, 255, 255);
+  text-align: left;
+
+  .progress-circle {
+    margin-right: 25px; // Adds spacing between the percentage and the text
   }
-  
-  .stats {
-    display: flex;
-    flex-direction: column;
-    gap: 20px; 
+
+  .percentage {
+    font-size: 14px;
+    font-weight: bold;
   }
-  
-  .stats-card {
-    display: flex;
-    align-items: center;
-    justify-content: flex-start; // Aligns content to the left
+
+  .stats-info {
+    flex: 1;
+  }
+}
+
+
+
+
+
+
+.dashboard-container {
+  display: flex; /* Aligns items in a row */
+  justify-content: space-between; /* Ensures even spacing */
+  align-items: flex-start; /* Aligns cards at the top */
+  flex-wrap: wrap; /* Prevents breaking on smaller screens */
+  gap: 20px; /* Provides spacing between cards */
+
+  .dashboard-card {
+    flex: 1; /* Ensures equal width */
+    min-width: 300px; /* Prevents excessive shrinking */
+    background: white;
     padding: 20px;
     border-radius: 10px;
-    color: rgb(255, 255, 255);
-    text-align: left;
-  
-    .progress-circle {
-      margin-right: 25px; // Adds spacing between the percentage and the text
-    }
-  
-    .percentage {
-      font-size: 14px;
-      font-weight: bold;
-    }
-  
-    .stats-info {
-      flex: 1;
-    }
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   }
-  
+}
+
+
+
+
+
+
+
+
+
+
+
+/* Ensure all cards are fully visible */
+.countries, .authors, .stats {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+}
+
+/* Responsive Design: Stack the cards below each other on small screens */
+@media (max-width: 768px) {
+  .dashboard-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .dashboard-card {
+    width: 100%; // Full width for better visibility
+    height: auto; // Adjust height dynamically
+  }
+}

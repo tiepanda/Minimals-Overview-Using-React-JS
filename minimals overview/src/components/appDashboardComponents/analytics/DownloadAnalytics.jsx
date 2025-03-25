@@ -480,35 +480,35 @@ const [currentBarData, setCurrentBarData] = useState(barDataByYear["2023"]);
             </Dropdown>
           </div>
         </div>
-
-        <ResponsiveContainer width="100%" height={300}>
-          <BarChart data={currentBarData} barSize={30}> 
-            <CartesianGrid strokeDasharray="3 3" vertical={false} />
-            <XAxis dataKey="month" />
-            <YAxis />
-            <Tooltip 
-              content={({ payload }) =>
-                payload && hoverBar ? (
-                  <div className="custom-tooltip">
-                    <p>{hoverBar}: {payload[0]?.payload[hoverBar]}</p>
-                  </div>
-                ) : null
-              } 
-            />
-            <Legend />
-            {Object.keys(barColors).map((key, index, keys) => (
-              <Bar
-                key={key}
-                dataKey={key}
-                stackId="a"
-                fill={hoverBar === key ? darkenColor(barColors[key]) : barColors[key]}
-                radius={index === keys.length - 1 ? [8, 8, 0, 0] : [0, 0, 0, 0]}
-                onMouseEnter={() => setHoverBar(key)}
-                onMouseLeave={() => setHoverBar(null)}
+        <div style={{ width: "100%", height: "100%" }}>
+          <ResponsiveContainer width="100%" height={300}>
+            <BarChart data={currentBarData} barSize={30}> 
+              <CartesianGrid strokeDasharray="3 3" vertical={false} />
+              <XAxis dataKey="month" />
+              <YAxis />
+              <Tooltip 
+                content={({ payload }) =>
+                  payload && hoverBar ? (
+                    <div className="custom-tooltip">
+                      <p>{hoverBar}: {payload[0]?.payload[hoverBar]}</p>
+                    </div>
+                  ) : null
+                } 
               />
-            ))}
-          </BarChart>
-        </ResponsiveContainer>
+              {Object.keys(barColors).map((key, index, keys) => (
+                <Bar
+                  key={key}
+                  dataKey={key}
+                  stackId="a"
+                  fill={hoverBar === key ? darkenColor(barColors[key]) : barColors[key]}
+                  radius={index === keys.length - 1 ? [8, 8, 0, 0] : [0, 0, 0, 0]}
+                  onMouseEnter={() => setHoverBar(key)}
+                  onMouseLeave={() => setHoverBar(null)}
+                />
+              ))}
+            </BarChart>
+          </ResponsiveContainer>
+        </div>
 
 
       </div>

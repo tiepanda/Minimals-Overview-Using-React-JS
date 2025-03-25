@@ -140,4 +140,86 @@
     }
   }
 
+
+
+  .stats-section {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+    padding: 16px;
+    box-sizing: border-box;
+    justify-content: space-between; /* Ensures even spacing */
+  }
+
+  @media (max-width: 900px) {
+    .stats-section {
+      flex-direction: column;
+      align-items: self-start;
+      width: 100vw; /* Full screen width */
+      padding: 20px;
+    }
+
+    .stat-card.full-width {
+      width: 80vw; /* Almost full screen */
+      max-width: 900px;
+    }
+  }
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  // .stats-section {
+  //   display: flex;
+  //   flex-wrap: wrap;
+  //   gap: 16px;
+  //   padding: 16px;
+  //   box-sizing: border-box;
+  //   justify-content: space-between;
+  // }
+  
+  // /* Default card width */
+  // .stat-card {
+  //   display: flex;
+  //   justify-content: space-between;
+  //   align-items: center;
+  //   flex: 1;
+  //   min-width: 500px;
+  //   max-width: 100%;
+  //   width: 100%;
+  //   background: #fff;
+  //   padding: 24px;
+  //   border-radius: 12px;
+  //   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+  // }
+  
+  // /* Expand cards when screen width is small */
+  // @media (max-width: 900px) {
+  //   .stats-section {
+  //     flex-direction: column;
+  //     align-items: center;
+  //     width: 20vw;
+  //     padding: 0;
+  //   }
+  
+  //   .stat-card.full-width {
+  //     width: 80vw; /* Almost full screen */
+  //     max-width: 900px;
+  //   }
+  // }
   
