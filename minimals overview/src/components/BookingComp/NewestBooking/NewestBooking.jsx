@@ -152,7 +152,7 @@ const NewestBooking = ({ bookings, onFilterChange }) => {
       </div>
       <div className="overflow-hidden">
         <div
-          className="px-4 pb-4"
+          className="pe-5 pb-4"
           ref={containerRef}
           {...swipeHandlers}
           onMouseDown={handleMouseDown}
@@ -166,13 +166,16 @@ const NewestBooking = ({ bookings, onFilterChange }) => {
             }}
           >
             <motion.div
+              className="gap-3"
               initial={false}
               style={{
                 display: "flex",
                 userSelect: "none",
                 backfaceVisibility: "hidden",
                 touchAction: "pan-y pinch-zoom",
-                marginLeft: "calc(-24px)",
+                // marginLeft: "-20px",
+                // marginRight: "-24px",
+                paddingRight: "40px",
               }}
               animate={{
                 x: -currentIndex * (100 / visibleItems) + "%",
@@ -192,7 +195,6 @@ const NewestBooking = ({ bookings, onFilterChange }) => {
                       <div
                         className="flex items-center gap-2 mb-2"
                         style={{
-                          gap: "calc(2* var(--spacing))",
                           display: "flex",
                           WebkitBoxAlign: "center",
                           alignItems: "center",
