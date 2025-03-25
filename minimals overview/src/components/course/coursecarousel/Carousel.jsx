@@ -99,20 +99,19 @@ function Carousel() {
     }
   };
 
-  // Mouse dragging state
+  // Handle drag-Slider with Mouse
   const [isDragging, setIsDragging] = useState(false);
   const [startX, setStartX] = useState(0);
   const [scrollLeft, setScrollLeft] = useState(0);
   const sliderRef = useRef(null);
 
-  // Mouse Down (Start Dragging)
   const handleMouseDown = (e) => {
     setIsDragging(true);
     setStartX(e.pageX - sliderRef.current.offsetLeft);
     setScrollLeft(startIndex);
   };
 
-  // Mouse Move (Dragging)
+  // Follow the movement of the mouse (while dragging)
   const handleMouseMove = (e) => {
     if (!isDragging) return;
     const x = e.pageX - sliderRef.current.offsetLeft;
@@ -125,12 +124,13 @@ function Carousel() {
     setStartIndex(Math.round(newIndex));
   };
 
-  // Mouse Up (Stop Dragging)
+  // Mouse Up to stop dragging
   const handleMouseUp = () => {
     setIsDragging(false);
   };
 
-  // Touch dragging state
+
+  // Following code is for the touch screen (When Page becomes Responsive)
   const handleTouchStart = (e) => {
     setIsDragging(true);
     setStartX(e.touches[0].pageX - sliderRef.current.offsetLeft);

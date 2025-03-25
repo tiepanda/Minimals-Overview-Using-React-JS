@@ -44,7 +44,6 @@
 
 .nav-left-title {
   font-weight: 600;
-  /* font-size: 0.875rem; */
   font-size: 14px;
   line-height: 1.57143;
 }
@@ -53,11 +52,8 @@
   min-width: 24px;
   align-items: center;
   justify-content: center;
-  /* font-size: 0.75rem; */
   font-size: 12px;
   font-weight: 700;
-  /* color: #637381;
-    background: rgba(128, 128, 128, 0.2); */
   cursor: inherit;
   white-space: nowrap;
   gap: 6px;
@@ -128,7 +124,6 @@
 
 .nav-rotating-border {
   position: absolute;
-  /* right: 2%; */
   width: 40px;
   height: 40px;
   border-radius: 50%;
@@ -176,7 +171,7 @@
   object-fit: cover;
 }
 
-/* Multiple bg-color for Array  */
+/* Multiple bg-color for Nav-Dropdown  */
 .nav-bg-color-gray {
   color: #637381;
   background: rgba(128, 128, 128, 0.2);

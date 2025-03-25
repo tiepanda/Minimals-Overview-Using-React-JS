@@ -25,14 +25,10 @@
   margin: 0;
   font-weight: 600;
   line-height: 1.55556;
-  /* font-size: 1.125rem; */
   font-size: 18px;
 }
 
-/* -------------------------------- */
-/* From next styles is for chart graph  */
-/* -------------------------------- */
-
+/* Following styles are for Progress Chart */
 .progress-chart {
   position: relative;
   display: flex;
@@ -64,10 +60,13 @@
   border-radius: 50%;
 }
 
-/* -------------------------------- */
-/* From next styles is for UL Lists  */
-/* -------------------------------- */
+/* Next code is for the (HR - Horiontal Ruler) Line */
+.progress-hr-line {
+  border: none;
+  border-top: 1px dashed white;
+}
 
+/* Following styles is for UL Lists */
 .unorder-container {
   display: flex;
   flex-wrap: wrap;
@@ -89,7 +88,6 @@
   display: inline-flex;
   -webkit-box-pack: start;
   justify-content: flex-start;
-  /* font-size: 0.8125rem; */
   font-size: 13px;
   font-weight: 500;
 }
@@ -111,10 +109,10 @@
 
 .course-uList-title {
   font-weight: 600;
-  /* font-size: 0.8125rem; */
   font-size: 13px;
 }
 
+/* Following styles are for chart colors */
 .color-gray {
   background: #e6e9ed;
 }
