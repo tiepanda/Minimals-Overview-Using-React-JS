@@ -5,7 +5,6 @@
   font-weight: 600;
   line-height: 1.55556;
   margin-bottom: 24px;
-  /* font-size: 1.125rem; */
   font-size: 18px;
 }
 
@@ -28,7 +27,7 @@
   flex-shrink: 0;
   opacity: 0.24;
   border-radius: 8px;
-  background-color: #00b8d9; /* Dynamic Color which need to be changed */
+  background-color: #00b8d9; /* Color is applying at the end of the File. */
 }
 
 .object-container {
@@ -42,7 +41,6 @@
 .object-title {
   margin: 0px;
   font-weight: 600;
-  /* font-size: 0.875rem; */
   font-size: 14px;
   line-height: 1.57143;
   overflow: hidden;
@@ -63,7 +61,6 @@
   -webkit-box-align: center;
   align-items: center;
   font-weight: 400;
-  /* font-size: 0.75rem; */
   font-size: 12px;
   line-height: 1.5;
   color: #637381;
@@ -101,12 +98,12 @@
 .percentage {
   width: 40px;
   font-weight: 500;
-  /* font-size: 0.75rem; */
   font-size: 12px;
   line-height: 1.5;
   color: #1c252e;
 }
 
+/* Following color is for the class ("data-circle") */
 .color-blue {
   background: #00b8e5;
 }

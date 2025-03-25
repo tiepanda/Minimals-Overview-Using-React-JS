@@ -19,7 +19,6 @@ function Course() {
           {/* Left Content */}
           <div
             className="col-12 col-lg-9 col-sm-12"
-            style={{ borderTop: "1px solid #E7E0ED" }}
           >
             <CourseHeader />
 

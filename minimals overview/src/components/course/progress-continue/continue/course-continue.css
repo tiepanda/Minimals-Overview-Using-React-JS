@@ -25,12 +25,10 @@
   margin: 0px;
   font-weight: 600;
   line-height: 1.55556;
-  /* font-size: 1.125rem; */
   font-size: 18px;
 }
 
 /* content css */
-
 .main-contentss {
   padding: 20px;
   display: flex;
@@ -50,7 +48,6 @@
   align-items: center;
   -webkit-box-pack: center;
   flex-shrink: 0;
-  /* font-size: 1.25rem; */
   font-size: 20px;
   line-height: 1;
   overflow: hidden;
@@ -88,7 +85,6 @@
   color: inherit;
   margin-bottom: 4px;
   font-weight: 600;
-  /* font-size: 0.875rem; */
   font-size: 14px;
 }
 
@@ -100,7 +96,6 @@
 .data-subtitle {
   color: #637381;
   font-weight: 400;
-  /* font-size: 0.75rem; */
   font-size: 12px;
   line-height: 1.5;
 }
@@ -140,7 +135,6 @@
 .continue-percentage {
   width: 40px;
   font-weight: 600;
-  /* font-size: 0.75rem; */
   font-size: 12px;
   line-height: 1.5;
   color: #637381;

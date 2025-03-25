@@ -116,7 +116,7 @@ function Progress() {
                 </div>
             </div>
 
-            <hr />
+            <hr className='progress-hr-line' />
 
             <ul className='unorder-container'>
                 <li className='list-container'>
