@@ -1,5 +1,5 @@
 .dashboard-container {
-  display: flex;
+  // display: flex;
   justify-content: space-between; /* Space them evenly */
   align-items: stretch; /* Make them equal in height */
   gap: 20px; /* Space between the cards */
@@ -1263,3 +1263,53 @@
 
 
 
+
+
+
+
+
+
+
+
+
+
+/* Featured Card */
+.featured-card {
+  text-align: center;
+  padding: 25px;
+  position: relative;
+  width: 100%; // Ensure it expands fully when stacked
+}
+
+/* Responsive Design: Stack the cards below each other on small screens */
+@media (max-width: 768px) {
+  // .dashboard-container {
+  //   flex-direction: column;
+  //   align-items: center;
+  // }
+
+  .welcome-card,
+  .featured-card {
+    width: 100%; // Full width for better visibility
+    height: auto;
+    text-align: center;
+  }
+
+  .featured-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 300px; // Ensures full visibility
+  }
+}
+
+@media (max-width: 768px) {
+
+  .welcome-card,
+  .featured-card {
+    width: 100% !important; /* Make both cards take full width */
+    max-width: 600px; /* Ensure readability */
+  }
+
+}
