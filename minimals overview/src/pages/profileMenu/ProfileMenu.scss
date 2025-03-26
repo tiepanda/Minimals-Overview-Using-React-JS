@@ -1,3 +1,365 @@
+// // ProfileMenu.scss
+
+// // Main container
+// .profile-container {
+//   position: relative;
+// }
+
+// // Profile button
+// .profile-btn {
+//   padding: 0;
+//   background: transparent;
+//   border: none;
+//   cursor: pointer;
+
+//   .profile-img {
+//     width: 40px;
+//     height: 40px;
+//     border-radius: 50%;
+//     object-fit: cover;
+//   }
+// }
+
+// // Custom Offcanvas styling
+// .profile-offcanvas {
+//   max-width: 320px;
+//   border: none;
+
+ 
+//   .offcanvas-header {
+//     padding-top: 16px;
+//     padding-bottom: 0;
+   
+
+//     .btn-close {
+//       color: #666;
+//       opacity: 0.8;
+//       padding: 8px;
+//       box-shadow: none;
+//       &:focus {
+//         box-shadow: none;
+//       }
+//     }
+//   }
+// }
+
+// // Profile header section
+// .profile-header {
+//   .avatar-ring-green {
+//     position: absolute;
+//     width: 86px;
+//     height: 86px;
+//     border: 2px solid #4caf50;
+//     border-radius: 50%;
+//     top: -3px;
+//     left: 50%;
+//     transform: translateX(-50%);
+//     z-index: 0;
+
+//     &::after {
+//       content: '';
+//       position: absolute;
+//       top: -5px;
+//       right: 5px;
+//       width: 12px;
+//       height: 12px;
+//       background-color: #4caf50;
+//       border-radius: 50%;
+//       border: 2px solid white;
+//     }
+//   }
+
+//   .user-avatar {
+//     width: 80px;
+//     height: 80px;
+//     border-radius: 50%;
+//     object-fit: cover;
+//     position: relative;
+//     z-index: 1;
+//   }
+
+//   h3 {
+//     font-size: 1.1rem;
+//     margin-top: 16px;
+//     margin-bottom: 4px;
+//     font-weight: 600;
+//   }
+
+//   p {
+//     color: #666;
+//     font-size: 0.9rem;
+//     margin-bottom: 20px;
+//   }
+// }
+
+// // Avatar group
+// .avatar-group {
+//   display: flex;
+//   justify-content: center;
+//   margin-bottom: 24px;
+
+ 
+//   .avatar-wrapper {
+//     position: relative;
+//     margin: 0 4px;
+   
+
+//     .avatar {
+//       width: 36px;
+//       height: 36px;
+//       border-radius: 50%;
+//       object-fit: cover;
+//       border: 2px solid white;
+//       cursor: pointer;
+//     }
+//     .tooltip {
+//       position: absolute;
+//       bottom: 100%;
+//       left: 50%;
+//       transform: translateX(-50%);
+//       background-color: rgba(0, 0, 0, 0.8);
+//       color: white;
+//       padding: 4px 8px;
+//       border-radius: 4px;
+//       font-size: 0.75rem;
+//       white-space: nowrap;
+//       margin-bottom: 8px;
+//       display: none;
+//       z-index: 10;
+
+//       &::after {
+//         content: '';
+//         position: absolute;
+//         top: 100%;
+//         left: 50%;
+//         transform: translateX(-50%);
+//         border-width: 4px;
+//         border-style: solid;
+//         border-color: rgba(0, 0, 0, 0.8) transparent transparent transparent;
+//       }
+//     }
+//     &:hover .tooltip {
+//       display: block;
+//     }
+//   }
+ 
+//   .add-avatar-wrapper {
+//     position: relative;
+//     margin: 0 4px;
+   
+//     .add-avatar-btn {
+//       width: 36px;
+//       height: 36px;
+//       border-radius: 50%;
+//       background-color: #f5f5f5;
+//       border: 2px solid #e0e0e0;
+//       display: flex;
+//       align-items: center;
+//       justify-content: center;
+//       cursor: pointer;
+//       color: #666;
+//       font-size: 18px;
+//       font-weight: 300;
+//       line-height: 1;
+//       transition: background-color 0.2s;
+
+     
+//       &:hover {
+//         background-color: #eeeeee;
+//       }
+//       &:active {
+//         transform: scale(0.95);
+//       }
+//     }
+//     .tooltip {
+//       position: absolute;
+//       bottom: 100%;
+//       left: 50%;
+//       transform: translateX(-50%);
+//       background-color: rgba(0, 0, 0, 0.8);
+//       color: white;
+//       padding: 4px 8px;
+//       border-radius: 4px;
+//       font-size: 0.75rem;
+//       white-space: nowrap;
+//       margin-bottom: 8px;
+//       display: none;
+//       z-index: 10;
+
+//       &::after {
+//         content: '';
+//         position: absolute;
+//         top: 100%;
+//         left: 50%;
+//         transform: translateX(-50%);
+//         border-width: 4px;
+//         border-style: solid;
+//         border-color: rgba(0, 0, 0, 0.8) transparent transparent transparent;
+//       }
+//     }
+
+//     &:hover .tooltip {
+//       display: block;
+//     }
+//   }
+// }
+
+// // Menu styling
+// .menu-list {
+//   margin: 0;
+//   padding: 0;
+
+//   .menu-item {
+//     display: flex;
+//     align-items: center;
+//     padding: 10px 0;
+//     margin-bottom: 2px;
+//     color: #637381;
+//     cursor: pointer;
+//     transition: color 0.2s;
+//     position: relative;
+
+   
+//     &:hover {
+//       color: #212B36;
+//     }
+   
+
+//     .menu-icon {
+//       display: flex;
+//       align-items: center;
+//       justify-content: center;
+//       width: 20px;
+//       height: 20px;
+//       margin-right: 16px;
+//       color: inherit;
+//       opacity: 0.8;
+//     }
+
+//     .menu-text {
+//       font-size: 0.95rem;
+//       font-weight: 500;
+//       flex: 1;
+//     }
+
+//     .badge-count {
+//       display: flex;
+//       align-items: center;
+//       justify-content: center;
+//       background-color: rgba(255, 72, 66, 0.16);
+//       color: #FF4842;
+//       font-size: 0.75rem;
+//       border-radius: 8px;
+//       padding: 2px 8px;
+//       min-width: 20px;
+//       height: 20px;
+//     }
+//   }
+// }
+
+// // Promo card
+// .promo-card {
+//   background: linear-gradient(135deg, #FF9F98 0%, #A155DB 100%);
+//   border-radius: 16px;
+//   padding: 24px;
+//   position: relative;
+//   overflow: hidden;
+//   color: white;
+//   text-align: left;
+//   margin-top: 30px;
+
+//   .promo-title {
+//     font-size: 1.25rem;
+//     font-weight: 700;
+//     margin-bottom: 4px;
+//   }
+
+//   .promo-text {
+//     font-size: 0.9rem;
+//     margin-bottom: 16px;
+//     opacity: 0.9;
+//   }
+
+//   .upgrade-btn {
+//     background-color: #FFAB00;
+//     color: #212B36;
+//     border: none;
+//     border-radius: 8px;
+//     padding: 6px 16px;
+//     font-weight: 600;
+//     font-size: 0.9rem;
+//     cursor: pointer;
+//     transition: background-color 0.2s;
+
+//     &:hover {
+//       background-color: #F59E0B;
+//     }
+//   }
+
+//   .promo-img {
+//     position: absolute;
+//     bottom: 0;
+//     right: 8px;
+//     height: 80px;
+//     width: auto;
+//     animation: moveUpDown 2s infinite ease-in-out;
+//   }
+// }
+
+// // Logout button
+// .logout-btn {
+//   width: 100%;
+//   padding: 10px;
+//   background-color: #FFF5F5;
+//   color: #FF4842;
+//   border: none;
+//   border-radius: 8px;
+//   font-weight: 600;
+//   font-size: 0.95rem;
+//   cursor: pointer;
+//   transition: background-color 0.2s;
+
+//   &:hover {
+//     background-color: #FFE7E6;
+//   }
+// }
+
+// @keyframes moveUpDown {
+//   0% {
+//     transform: translateY(0);
+//   }
+//   50% {
+//     transform: translateY(-10px); // Moves up slightly
+//   }
+//   100% {
+//     transform: translateY(0);
+//   }
+// }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 // ProfileMenu.scss
 
 // Main container
@@ -80,7 +442,7 @@
 
   h3 {
     font-size: 1.1rem;
-    margin-top: 16px;
+    margin-top: 50px;
     margin-bottom: 4px;
     font-weight: 600;
   }
@@ -95,6 +457,7 @@
 // Avatar group
 .avatar-group {
   display: flex;
+  margin-top: 15px;
   justify-content: center;
   margin-bottom: 24px;
 
@@ -204,6 +567,23 @@
   }
 }
 
+
+
+
+// .menu-item{
+//   transition: background-color 0.3s ease;
+
+//   &:hover {
+//     background-color: #fdd4d4; // Light grey on hover
+//   }
+
+//   &:active {
+//     background-color: #fdbcbc; // Dark grey on click
+//   }
+// }
+
+
+
 // Menu styling
 .menu-list {
   margin: 0;
@@ -218,10 +598,15 @@
     cursor: pointer;
     transition: color 0.2s;
     position: relative;
+    transition: background-color 0.3s ease;
 
    
     &:hover {
-      color: #212B36;
+      background-color: #f5f2f2; // Light grey on hover
+    }
+  
+    &:active {
+      background-color:#e6e4e4; // Dark grey on click
     }
    
 
@@ -310,7 +695,7 @@
 .logout-btn {
   width: 100%;
   padding: 10px;
-  background-color: #FFF5F5;
+  background-color: #fce4e4;
   color: #FF4842;
   border: none;
   border-radius: 8px;
@@ -320,7 +705,7 @@
   transition: background-color 0.2s;
 
   &:hover {
-    background-color: #FFE7E6;
+    background-color: #fabebb;
   }
 }
 
@@ -336,3 +721,260 @@
   }
 }
 
+
+
+
+// Profile header section
+.profile-header {
+  .avatar-ring-green {
+    position: absolute;
+    width: 86px;
+    height: 86px;
+    border: 2px solid #4caf50;
+    border-radius: 50%;
+    top: 30px; // Move the ring down
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 0;
+    
+
+    &::after {
+      content: '';
+      position: absolute;
+      top: -5px;
+      right: 5px;
+      width: 12px;
+      height: 12px;
+      background-color: #4caf50;
+      border-radius: 50%;
+      border: 2px solid white;
+    }
+  }
+
+  .user-avatar {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    object-fit: cover;
+    position: relative;
+    z-index: 1;
+    top: 33px; // Move the avatar down
+  }
+}
+
+
+
+
+
+
+// Profile header section
+.profile-header {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  .btn-close {
+    margin-left: 1px; // Pushes it to the left
+  }
+
+
+
+  .avatar-ring-green {
+    position: absolute;
+    width: 107px;
+    height: 107px;
+    border-radius: 50%;
+    top: 20px;  // Slightly lower the ring
+    left: 50%;
+    transform: translateX(-40%);
+    z-index: 0;
+    background: conic-gradient(
+      rgba(255, 255, 255, 0) 0deg,  // Transparent start
+      rgb(65, 203, 70) 30deg, // Full green
+      rgb(67, 209, 72) 330deg, // Full green
+      rgba(255, 255, 255, 0) 360deg  // Transparent end
+    );
+    mask: radial-gradient(circle, rgba(0, 0, 0, 1) 55%, rgba(0, 0, 0, 0) 56%);
+    animation: rotateRing 3s linear infinite;
+  }
+
+  .user-avatar {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    object-fit: cover;
+    position: relative;
+    z-index: 1;
+  }
+}
+
+// Rotation animation
+@keyframes rotateRing {
+  0% {
+    transform: translateX(-50%) rotate(0deg);
+  }
+  100% {
+    transform: translateX(-50%) rotate(360deg);
+  }
+}
+
+
+
+
+.avatar-container {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.avatar-wrapper {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+
+  .avatar {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: 2px solid #fff;
+    transition: transform 0.2s ease-in-out;
+
+    &:hover {
+      transform: scale(1.1);
+    }
+  }
+
+  .tooltip {
+    position: absolute;
+    bottom: 60px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: rgba(0, 0, 0, 0.8);
+    color: white;
+    padding: 6px 12px;
+    border-radius: 6px;
+    font-size: 0.85rem;
+    white-space: nowrap;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out;
+  }
+
+  &:hover .tooltip {
+    opacity: 1;
+    visibility: visible;
+  }
+}
+
+
+.profile-offcanvas {
+  .offcanvas-header {
+    display: flex;
+    justify-content: flex-start; // Aligns items to the left
+    padding-left: 15px; // Adds some spacing from the left edge
+    position: relative; // Ensures child elements are positioned relative to this
+
+    .btn-close {
+      margin-left: 1px; // Pushes it to the left
+      position: relative;
+      z-index: 2; // Keeps the cross mark above the circle
+
+      &::after {
+        content: "";
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        width: 40px; // Adjust size of the circle
+        height: 40px;
+        background-color: rgba(0, 0, 0, 0.1); // Light transparent circle
+        border-radius: 50%;
+        transform: translate(-50%, -50%) scale(0); // Start as hidden
+        transition: transform 0.3s ease-in-out;
+        z-index: -1; // Keeps the circle behind the cross
+      }
+
+      &:hover::after {
+        transform: translate(-50%, -50%) scale(1); // Expands on hover
+      }
+    }
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.menu-item {
+  position: relative;
+  overflow: hidden; // Ensures the ripple doesn't go outside the menu item
+
+
+
+  
+  .ripple {
+    position: absolute;
+    border-radius: 50%;
+    background: rgba(0, 150, 255, 0.4);
+    transform: scale(0);
+    animation: ripple-animation 0.6s linear;
+    pointer-events: none;
+  }
+}
+
+@keyframes ripple-animation {
+  to {
+    transform: scale(4);
+    opacity: 0;
+  }
+}
+
+.logout-btn-container {
+  position: sticky;
+  bottom: 0;
+  background: white;
+  padding: 10px;
+}
+
+.logout-btn {
+  transition: background-color 0.3s ease;
+
+  &:hover {
+    background-color: #fdd4d4; // Light grey on hover
+  }
+
+  &:active {
+    background-color: #fdbcbc; // Dark grey on click
+  }
+}
+
+
+
+.menu-item{
+  transition: background-color 0.3s ease;
+
+  &:hover {
+    background-color: #fdd4d4; // Light grey on hover
+  }
+
+  &:active {
+    background-color: #fdbcbc; // Dark grey on click
+  }
+}

@@ -559,56 +559,6 @@
 
 
 
-
-
-
-
-
-
-
-
-
-// .status-label {
-//   display: inline-block;
-//   background-color: rgb(132, 19, 38); // Default background (for "Paid")
-//   color: #fff; // White text for contrast
-//   padding: 2px 6px; // Less padding for a thin background
-//   border-radius: 4px; // Small rounded edges
-//   font-weight: bold;
-//   text-align: center;
-//   font-size: 1px;
-//   font-size: 14px; // Adjust font size for readability
-
-//   &.paid {
-//     background-color: pink;
-//     color: #333;
-//   }
-
-//   &.out-of-date {
-//     background-color: pink;
-//     color: red;
-//   }
-
-//   &.progress {
-//     background-color: rgb(255, 221, 126);
-//     color: orange;
-//   }
-// }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 .status-label {
   display: inline-block;
   width: 70px; // Fixed width for consistency
