@@ -181,11 +181,13 @@ const ProfileMenu = () => {
           </nav>
 
           {/* Logout Button */}
-          <div className="mt-4 mb-3">
-            <button className="logout-btn">
-              Logout
-            </button>
-          </div>
+          {/* Logout Button (Fixed at Bottom) */}
+<div className="logout-container">
+  <button className="logout-btn">
+    Logout
+  </button>
+</div>
+
         </Offcanvas.Body>
       </Offcanvas>
     </div>

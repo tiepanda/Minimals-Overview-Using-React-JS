@@ -80,27 +80,14 @@
     font-size: 16px;
     transition: background-color 0.3s ease;
   
-    // &:hover {
-    //   // background-color: darken(#28a745, 10%);
-    // }
-  
-    &::after {
-      content: "";
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      width: 300%;
-      height: 300%;
-      background: radial-gradient(circle, rgba(144, 238, 144, 0.6) 10%, rgba(144, 238, 144, 0) 80%);
-      transform: translate(-50%, -50%) scale(0);
-      opacity: 1;
-      transition: transform 0.6s ease-out, opacity 0.8s ease-out;
-      border-radius: 50%;
+
+
+    &:hover {
+      background-color: #347c2c; // Light grey on hover
     }
   
-    &:active::after {
-      transform: translate(-50%, -50%) scale(1);
-      opacity: 0;
+    &:active {
+      background-color: #57be4c; // Dark grey on click
     }
   }
 }
@@ -1313,3 +1300,17 @@
   }
 
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+

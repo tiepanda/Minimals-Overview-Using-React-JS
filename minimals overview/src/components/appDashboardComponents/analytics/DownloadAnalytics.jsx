@@ -133,7 +133,21 @@
 //                   : totalDownloads.toLocaleString()}
 //               </text>
 
-//               <Tooltip />
+//               {/* <Tooltip />
+//               <Tooltip
+//           formatter={(value) => [
+//             `${((value / totalDownloads) * 100).toFixed(1)}%`,
+//             name,
+//           ]}
+//         /> */}
+
+// <Tooltip
+//   formatter={(value, name) => [
+//     `${((value / totalDownloads) * 100).toFixed(1)}%`, // Convert value to percentage
+//     name, // Show OS name instead of "Downloads"
+//   ]}
+// />
+
 //             </PieChart>
 //           </ResponsiveContainer>
 //         </div>
@@ -202,34 +216,37 @@
 //             </Dropdown>
 //           </div>
 //         </div>
-
-//         <ResponsiveContainer width="100%" height={300}>
-//           <BarChart data={currentBarData}>
-
-//             <CartesianGrid strokeDasharray="3 3" vertical={false} />
-//             <XAxis dataKey="month" />
-//             <YAxis />
-//             <Tooltip content={({ payload }) =>
-//               payload && hoverBar ? (
-//                 <div className="custom-tooltip">
-//                   <p>{hoverBar}: {payload[0]?.payload[hoverBar]}</p>
-//                 </div>
-//               ) : null
-//             } />
-//             <Legend />
-//             {Object.keys(barColors).map((key, index, keys) => (
-//               <Bar
-//                 key={key}
-//                 dataKey={key}
-//                 stackId="a"
-//                 fill={hoverBar === key ? darkenColor(barColors[key]) : barColors[key]}
-//                 radius={index === keys.length - 1 ? [8, 8, 0, 0] : [0, 0, 0, 0]}
-//                 onMouseEnter={() => setHoverBar(key)}
-//                 onMouseLeave={() => setHoverBar(null)}
+//         <div style={{ width: "100%", height: "100%" }}>
+//           <ResponsiveContainer width="100%" height={300}>
+//             <BarChart data={currentBarData} barSize={30}> 
+//               <CartesianGrid strokeDasharray="3 3" vertical={false} />
+//               <XAxis dataKey="month" />
+//               <YAxis />
+//               <Tooltip 
+//                 content={({ payload }) =>
+//                   payload && hoverBar ? (
+//                     <div className="custom-tooltip">
+//                       <p>{hoverBar}: {payload[0]?.payload[hoverBar]}</p>
+//                     </div>
+//                   ) : null
+//                 } 
 //               />
-//             ))}
-//           </BarChart>
-//         </ResponsiveContainer>
+//               {Object.keys(barColors).map((key, index, keys) => (
+//                 <Bar
+//                   key={key}
+//                   dataKey={key}
+//                   stackId="a"
+//                   fill={hoverBar === key ? darkenColor(barColors[key]) : barColors[key]}
+//                   radius={index === keys.length - 1 ? [8, 8, 0, 0] : [0, 0, 0, 0]}
+//                   onMouseEnter={() => setHoverBar(key)}
+//                   onMouseLeave={() => setHoverBar(null)}
+//                 />
+//               ))}
+//             </BarChart>
+//           </ResponsiveContainer>
+//         </div>
+
+
 //       </div>
 //     </div>
 //   );
@@ -244,6 +261,10 @@
 // };
 
 // export default DownloadAnalytics;
+
+
+
+
 
 
 
@@ -333,9 +354,11 @@ const barColors = {
 
 const DownloadAnalytics = () => {
   const [hoverIndex, setHoverIndex] = useState(null);
-  const [hoverBar, setHoverBar] = useState(null);
+  // const [hoverBar, setHoverBar] = useState(null);
   const [selectedYear, setSelectedYear] = useState("2023");
 const [currentBarData, setCurrentBarData] = useState(barDataByYear["2023"]);
+
+const [hoverBar, setHoverBar] = useState({ region: null, month: null });
 
   const [isDropdownOpen, setIsDropdownOpen] = useState(false); // New state to control dropdown visibility
 
@@ -397,20 +420,12 @@ const [currentBarData, setCurrentBarData] = useState(barDataByYear["2023"]);
                   : totalDownloads.toLocaleString()}
               </text>
 
-              {/* <Tooltip />
               <Tooltip
-          formatter={(value) => [
-            `${((value / totalDownloads) * 100).toFixed(1)}%`,
-            name,
-          ]}
-        /> */}
-
-<Tooltip
-  formatter={(value, name) => [
-    `${((value / totalDownloads) * 100).toFixed(1)}%`, // Convert value to percentage
-    name, // Show OS name instead of "Downloads"
-  ]}
-/>
+                formatter={(value, name) => [
+                  `${((value / totalDownloads) * 100).toFixed(1)}%`, // Convert value to percentage
+                  name, // Show OS name instead of "Downloads"
+                ]}
+              />
 
             </PieChart>
           </ResponsiveContainer>
@@ -488,23 +503,23 @@ const [currentBarData, setCurrentBarData] = useState(barDataByYear["2023"]);
               <YAxis />
               <Tooltip 
                 content={({ payload }) =>
-                  payload && hoverBar ? (
+                  payload && hoverBar.region && hoverBar.month ? (
                     <div className="custom-tooltip">
-                      <p>{hoverBar}: {payload[0]?.payload[hoverBar]}</p>
+                      <p>{hoverBar.region} ({hoverBar.month}): {payload[0]?.payload[hoverBar.region]}</p>
                     </div>
                   ) : null
                 } 
               />
-              {Object.keys(barColors).map((key, index, keys) => (
-                <Bar
-                  key={key}
-                  dataKey={key}
-                  stackId="a"
-                  fill={hoverBar === key ? darkenColor(barColors[key]) : barColors[key]}
-                  radius={index === keys.length - 1 ? [8, 8, 0, 0] : [0, 0, 0, 0]}
-                  onMouseEnter={() => setHoverBar(key)}
-                  onMouseLeave={() => setHoverBar(null)}
-                />
+              {Object.keys(barColors).map((regionKey, index, keys) => (
+              <Bar
+                key={regionKey}
+                dataKey={regionKey}
+                stackId="a"
+                fill={(hoverBar.region === regionKey && hoverBar.month === regionKey.month) ? darkenColor(barColors[regionKey]) : barColors[regionKey]}
+                radius={index === keys.length - 1 ? [8, 8, 0, 0] : [0, 0, 0, 0]}
+                onMouseEnter={(data) => setHoverBar({ region: regionKey, month: data.month })}
+                onMouseLeave={() => setHoverBar({ region: null, month: null })}
+              />
               ))}
             </BarChart>
           </ResponsiveContainer>
@@ -525,3 +540,4 @@ const darkenColor = (hex) => {
 };
 
 export default DownloadAnalytics;
+
