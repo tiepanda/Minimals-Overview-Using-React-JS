@@ -17,6 +17,8 @@
 .reminder-data {
   gap: 12px;
   display: flex;
+  margin-left: -21px;
+  margin-right: -21px;
 }
 
 .data-circle {
