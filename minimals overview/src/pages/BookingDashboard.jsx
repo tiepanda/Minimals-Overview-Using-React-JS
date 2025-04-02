@@ -78,11 +78,6 @@ const BookingDashboard = () => {
     }
   };
 
-  // // Function to add a new booking (example function)
-  // const addNewBooking = (newBooking) => {
-  //   setBookings((prevBookings) => [newBooking, ...prevBookings]);
-  // };
-
   return (
     <Container fluid className="">
       <Row className="my-2">
