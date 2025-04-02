@@ -51,6 +51,7 @@
   font-size: 20px;
   line-height: 1;
   overflow: hidden;
+  -webkit-user-select: none;
   user-select: none;
   border-radius: 12px;
   width: 56px;
